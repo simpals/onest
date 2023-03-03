@@ -1,7 +1,12 @@
 sources:
-  - Rubik.glyphs
-  - Rubik-Italic.glyphs
+  - glyphs/OnestBlack.glyphs
+  # - glyphs/OnestBold.glyphs
+  # - glyphs/OnestExtraBold.glyphs
+  # - glyphs/OnestLight.glyphs
+  # - glyphs/OnestMedium.glyphs
+  # - glyphs/OnestRegular.glyphs
+  # - glyphs/OnestThin.glyphs
 axisOrder:
   - wght
   - ital
-familyName: Rubik
+familyName: Onest
