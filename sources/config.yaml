@@ -1,12 +1,12 @@
 sources:
-  - glyphs/OnestBlack.glyphs
-  # - glyphs/OnestBold.glyphs
-  # - glyphs/OnestExtraBold.glyphs
-  # - glyphs/OnestLight.glyphs
-  # - glyphs/OnestMedium.glyphs
-  # - glyphs/OnestRegular.glyphs
-  # - glyphs/OnestThin.glyphs
+  - glyphs/Onest-Black.ufoz
+  - glyphs/Onest-Bold.ufoz
+  - glyphs/Onest-ExtraBold.ufoz
+  - glyphs/Onest-Light.ufoz
+  - glyphs/Onest-Medium.ufoz
+  - glyphs/Onest-Regular.ufoz
+  - glyphs/Onest-Thin.ufoz
 axisOrder:
   - wght
-  - ital
 familyName: Onest
+outputDir: "../fonts"

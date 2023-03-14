@@ -12,7 +12,7 @@
 [Shaping]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsimpals%2Fonest%2Fgh-pages%2Fbadges%2FShapingChecks.json
 [Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsimpals%2Fonest%2Fgh-pages%2Fbadges%2FUniversal.json
 
-Description of your font goes here. We recommend to start with a very short presentation line (the kind you would use on twitter to present your project for example), and then add as much details as necesary :-) Origin of the project, idea of usage, concept of creation… but also number of masters, axes, character sets, etc.
+Onest is designed as a hybrid of geometric and humanistic grotesque. The font combines capaciousness and legibility, so it saves space without losing readability.This is the first Moldovan made typeface created with a mere goal — to make communication between the state and the citizen honest and understandable. Also, to bring Moldova's image closer to that of a modern, open country. Onest is suitable for reading long texts from the screens of any device and is recommended for government and social service sites.
 
 ![Onest 1](./documentation/Onest%201.jpg)
 ![Onest 1](./documentation/Onest%202.jpg)
