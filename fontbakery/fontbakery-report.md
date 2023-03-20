@@ -71,7 +71,7 @@ Width = 446:
 greater, less
 
 Width = 542:
-equal, notequal
+notequal, equal
 
 Width = 477:
 multiply
@@ -86,7 +86,7 @@ Width = 615:
 approxequal
 
 Width = 507:
-greaterequal, lessequal
+lessequal, greaterequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
@@ -713,7 +713,7 @@ Width = 579:
 notequal
 
 Width = 532:
-greaterequal, lessequal
+lessequal, greaterequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
@@ -1012,7 +1012,7 @@ Width = 467:
 greater, less
 
 Width = 554:
-equal, notequal
+notequal, equal
 
 Width = 526:
 multiply
@@ -1027,7 +1027,7 @@ Width = 627:
 approxequal
 
 Width = 531:
-greaterequal, lessequal
+lessequal, greaterequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
@@ -1856,7 +1856,7 @@ Width = 485:
 greater, less
 
 Width = 563:
-equal, notequal
+notequal, equal
 
 Width = 571:
 multiply
@@ -1871,7 +1871,7 @@ Width = 646:
 approxequal
 
 Width = 552:
-greaterequal, lessequal
+lessequal, greaterequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
