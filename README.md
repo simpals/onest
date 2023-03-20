@@ -12,7 +12,8 @@
 [Shaping]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsimpals%2Fonest%2Fgh-pages%2Fbadges%2FShapingChecks.json
 [Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsimpals%2Fonest%2Fgh-pages%2Fbadges%2FUniversal.json
 
-Onest is designed as a hybrid of geometric and humanistic grotesque. The font combines capaciousness and legibility, so it saves space without losing readability.This is the first Moldovan made typeface created with a mere goal — to make communication between the state and the citizen honest and understandable. Also, to bring Moldova's image closer to that of a modern, open country. Onest is suitable for reading long texts from the screens of any device and is recommended for government and social service sites.
+Onest
+In seven fonts, from thin to extra bold, Onest is designed as a hybrid of geometric and humanistic grotesques. Onest is suitable for reading long texts from the screens of any device and is recommended for    apps and sites. Letters are easily distinguished even in small sizes, so they can be used in interface elements or navigation. Several character sets have been developed for a range of closed and semi-closed apertures, allowing the combination of characters depending on the goal. Onest is a modern typeface, so it has a lot of useful conveniences. The subtleties of correct speech transmission are Onest's strong points. It knows like no other the importance and value of using the right diacritics and the difference between cedilla, ogonek and and the way things should be. For all its versatility, Onest allows text to keep its individuality. All thanks to alternative symbols that set the tone and even the character of the message.
 
 ![Onest 1](./documentation/Onest%201.jpg)
 ![Onest 1](./documentation/Onest%202.jpg)
@@ -28,9 +29,9 @@ Onest is designed as a hybrid of geometric and humanistic grotesque. The font co
 ![Onest 1](./documentation/Onest%2012.jpg)
 ![Onest 1](./documentation/Onest%2013.jpg)
 
-## About
+## About organization
 
-Description of you and/or organisation goes here.
+Simpals is the largest classifieds board and the latest news, cool cartoons and the Chisinau Marathon, electronic diaries, and transparent public acquisition. Simpals is a painted city and new green parks, innovative products, world records and world-famous startups, and many other things that make life better and easier day by day.
 
 ## Building
 
