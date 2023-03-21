@@ -7,4 +7,6 @@ sources:
   - glyphs/Onest-Regular.glyphs
   - glyphs/Onest-Thin.glyphs
 familyName: Onest
+axisOrder:
+  - wght
 outputDir: "../fonts"

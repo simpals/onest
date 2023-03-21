@@ -556,6 +556,19 @@ uni0408,
 uni040E,
 uni045E
 );
+},
+{
+name = weightClass;
+value = 300;
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 date = "2023-03-21 12:08:17 +0000";
@@ -29463,6 +29476,12 @@ unicode = 1118;
 );
 instances = (
 {
+customParameters = (
+{
+name = weightClass;
+value = 300;
+}
+);
 instanceInterpolations = {
 "ED8FB365-A02F-46D3-A65B-595A86BAB06C" = 1;
 };
@@ -30429,14 +30448,14 @@ value = "Dmitri Voloshin, Andrey Kudryavtsev";
 },
 {
 key = licenseURL;
-value = "http://scripts.sil.org/OFL";
+value = "https://scripts.sil.org/OFL";
 },
 {
 key = licenses;
 values = (
 {
 language = dflt;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 }
 );
 },
