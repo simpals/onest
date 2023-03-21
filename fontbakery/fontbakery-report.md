@@ -2,7 +2,18 @@
 
 Fontbakery version: 0.8.11
 
-<details><summary><b>[12] Onest-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+<details><summary><b>[14] Onest-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+
+
+* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
+The font may be embedded but must only be installed temporarily on other systems.
+
+No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
+</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Onest-Regular.ttf', 'fonts/ttf/Onest-Thin.ttf', 'fonts/ttf/Onest-Black.ttf', 'fonts/ttf/Onest-Medium.ttf', 'fonts/ttf/Onest-Light.ttf', 'fonts/ttf/Onest-ExtraBold.ttf', 'fonts/ttf/Onest-Bold.ttf']. [code: missing-os2-fsselection-bit7]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 982, but got 970 instead [code: ascent]
@@ -16,8 +27,8 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID is 'PYRS', a font editor default. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: bad]
+* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+ [code: unknown]
 </div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -86,7 +97,7 @@ Width = 615:
 approxequal
 
 Width = 507:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
@@ -192,6 +203,10 @@ lessequal, greaterequal
 	* uni0405 (U+0405): X=240.5,Y=705.0 (should be at cap-height 707?)
 
 	* uni040E (U+040E): X=123.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni040E (U+040E): X=123.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni0423 (U+0423): X=116.0,Y=-1.0 (should be at baseline 0?)
 
 	* uni0423 (U+0423): X=116.0,Y=-1.0 (should be at baseline 0?)
 
@@ -313,6 +328,8 @@ lessequal, greaterequal
 
 	* scedilla (U+015F) contains a short segment B<<272.5,-111.0>-<259.0,-110.0>-<252.0,-110.0>>
 
+	* uni0162 (U+0162) contains a short segment L<<328.0,0.0>--<313.0,0.0>>
+
 	* uni0162 (U+0162) contains a short segment B<<300.0,-59.0>-<305.0,-58.0>-<310.5,-57.5>>
 
 	* uni0162 (U+0162) contains a short segment B<<310.5,-57.5>-<316.0,-57.0>-<321.0,-57.0>>
@@ -322,8 +339,6 @@ lessequal, greaterequal
 	* uni0162 (U+0162) contains a short segment B<<238.5,-252.5>-<230.0,-252.0>-<222.0,-250.0>>
 
 	* uni0162 (U+0162) contains a short segment L<<252.0,0.0>--<241.0,0.0>>
-
-	* uni0162 (U+0162) contains a short segment L<<328.0,0.0>--<313.0,0.0>>
 
 	* uni0163 (U+0163) contains a short segment B<<267.0,0.0>-<264.0,0.0>-<261.0,0.0>>
 
@@ -358,7 +373,22 @@ lessequal, greaterequal
 	* Euro (U+20AC) contains a short segment B<<225.0,347.0>-<225.0,335.0>-<226.0,324.0>> 
 
 	* Euro (U+20AC) contains a short segment B<<226.0,324.0>-<227.0,313.0>-<229.0,303.0>> [code: found-short-segments]
-</div></details><br></div></details><details><summary><b>[13] Onest-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[16] Onest-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+
+
+* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
+The font may be embedded but must only be installed temporarily on other systems.
+
+No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWeightClass. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2 usWeightClass is '400' when it should be '100'. [code: bad-value]
+</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Onest-Regular.ttf', 'fonts/ttf/Onest-Thin.ttf', 'fonts/ttf/Onest-Black.ttf', 'fonts/ttf/Onest-Medium.ttf', 'fonts/ttf/Onest-Light.ttf', 'fonts/ttf/Onest-ExtraBold.ttf', 'fonts/ttf/Onest-Bold.ttf']. [code: missing-os2-fsselection-bit7]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 982, but got 970 instead [code: ascent]
@@ -372,8 +402,8 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID is 'PYRS', a font editor default. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: bad]
+* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+ [code: unknown]
 </div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -424,7 +454,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 508:
-plus, minus
+minus, plus
 
 Width = 429:
 less, greater
@@ -464,9 +494,9 @@ approxequal
 
 	* section (U+00A7): X=344.5,Y=705.0 (should be at cap-height 707?)
 
-	* twosuperior (U+00B2): X=137.0,Y=707.5 (should be at cap-height 707?)
+	* uni00B2 (U+00B2): X=137.0,Y=707.5 (should be at cap-height 707?)
 
-	* threesuperior (U+00B3): X=136.5,Y=707.5 (should be at cap-height 707?)
+	* uni00B3 (U+00B3): X=136.5,Y=707.5 (should be at cap-height 707?)
 
 	* ordmasculine (U+00BA): X=186.0,Y=708.0 (should be at cap-height 707?)
 
@@ -504,11 +534,15 @@ approxequal
 
 	* uni040E (U+040E): X=109.0,Y=-1.0 (should be at baseline 0?)
 
+	* uni040E (U+040E): X=109.0,Y=-1.0 (should be at baseline 0?)
+
 	* uni0417 (U+0417): X=237.0,Y=708.0 (should be at cap-height 707?)
 
 	* uni0417 (U+0417): X=403.5,Y=2.0 (should be at baseline 0?)
 
 	* uni0417 (U+0417): X=228.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni0423 (U+0423): X=109.0,Y=-1.0 (should be at baseline 0?)
 
 	* uni0423 (U+0423): X=109.0,Y=-1.0 (should be at baseline 0?)
 
@@ -623,7 +657,22 @@ approxequal
 	* exclamdown (U+00A1): L<<101.0,-181.0>--<103.0,349.0>> 
 
 	* exclamdown (U+00A1): L<<140.0,349.0>--<142.0,-181.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] Onest-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[15] Onest-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+
+
+* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
+The font may be embedded but must only be installed temporarily on other systems.
+
+No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWeightClass. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2 usWeightClass is '400' when it should be '900'. [code: bad-value]
+</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Onest-Regular.ttf', 'fonts/ttf/Onest-Thin.ttf', 'fonts/ttf/Onest-Black.ttf', 'fonts/ttf/Onest-Medium.ttf', 'fonts/ttf/Onest-Light.ttf', 'fonts/ttf/Onest-ExtraBold.ttf', 'fonts/ttf/Onest-Bold.ttf']. [code: missing-os2-fsselection-bit7]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 982, but got 970 instead [code: ascent]
@@ -637,8 +686,8 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID is 'PYRS', a font editor default. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: bad]
+* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+ [code: unknown]
 </div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -713,7 +762,7 @@ Width = 579:
 notequal
 
 Width = 532:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
@@ -764,7 +813,7 @@ lessequal, greaterequal
 
 	* dieresis (U+00A8): X=511.5,Y=708.5 (should be at cap-height 708?)
 
-	* threesuperior (U+00B3): X=105.5,Y=708.5 (should be at cap-height 708?)
+	* uni00B3 (U+00B3): X=105.5,Y=708.5 (should be at cap-height 708?)
 
 	* Aring (U+00C5): X=370.0,Y=968.0 (should be at ascender 970?)
 
@@ -943,7 +992,22 @@ lessequal, greaterequal
 	* uni20B4 (U+20B4) contains a short segment B<<206.5,362.5>-<216.0,369.0>-<218.0,370.0>> 
 
 	* uni20B4 (U+20B4) contains a short segment B<<384.0,496.5>-<389.0,506.0>-<389.0,514.0>> [code: found-short-segments]
-</div></details><br></div></details><details><summary><b>[12] Onest-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[15] Onest-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+
+
+* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
+The font may be embedded but must only be installed temporarily on other systems.
+
+No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWeightClass. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2 usWeightClass is '400' when it should be '500'. [code: bad-value]
+</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Onest-Regular.ttf', 'fonts/ttf/Onest-Thin.ttf', 'fonts/ttf/Onest-Black.ttf', 'fonts/ttf/Onest-Medium.ttf', 'fonts/ttf/Onest-Light.ttf', 'fonts/ttf/Onest-ExtraBold.ttf', 'fonts/ttf/Onest-Bold.ttf']. [code: missing-os2-fsselection-bit7]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 982, but got 970 instead [code: ascent]
@@ -957,8 +1021,8 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID is 'PYRS', a font editor default. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: bad]
+* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+ [code: unknown]
 </div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -1027,7 +1091,7 @@ Width = 627:
 approxequal
 
 Width = 531:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
@@ -1041,6 +1105,8 @@ lessequal, greaterequal
 	* section (U+00A7): X=207.0,Y=706.5 (should be at cap-height 707?)
 
 	* questiondown (U+00BF): X=164.0,Y=2.0 (should be at baseline 0?)
+
+	* Oslash (U+00D8): X=299.0,Y=1.0 (should be at baseline 0?)
 
 	* Oslash (U+00D8): X=471.0,Y=708.0 (should be at cap-height 707?)
 
@@ -1235,7 +1301,22 @@ lessequal, greaterequal
 	* uni0443 (U+0443) contains a short segment L<<88.0,-149.0>--<96.0,-149.0>> 
 
 	* uni045E (U+045E) contains a short segment L<<88.0,-149.0>--<96.0,-149.0>> [code: found-short-segments]
-</div></details><br></div></details><details><summary><b>[13] Onest-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[16] Onest-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+
+
+* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
+The font may be embedded but must only be installed temporarily on other systems.
+
+No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWeightClass. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2 usWeightClass is '400' when it should be '300'. [code: bad-value]
+</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Onest-Regular.ttf', 'fonts/ttf/Onest-Thin.ttf', 'fonts/ttf/Onest-Black.ttf', 'fonts/ttf/Onest-Medium.ttf', 'fonts/ttf/Onest-Light.ttf', 'fonts/ttf/Onest-ExtraBold.ttf', 'fonts/ttf/Onest-Bold.ttf']. [code: missing-os2-fsselection-bit7]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 982, but got 970 instead [code: ascent]
@@ -1249,8 +1330,8 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID is 'PYRS', a font editor default. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: bad]
+* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+ [code: unknown]
 </div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -1301,7 +1382,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 518:
-plus, minus
+minus, plus
 
 Width = 441:
 less, greater
@@ -1333,7 +1414,7 @@ approxequal
 
 	* y (U+0079): X=466.0,Y=1.0 (should be at baseline 0?)
 
-	* threesuperior (U+00B3): X=230.5,Y=709.0 (should be at cap-height 707?)
+	* uni00B3 (U+00B3): X=230.5,Y=709.0 (should be at cap-height 707?)
 
 	* atilde (U+00E3): X=142.0,Y=707.5 (should be at cap-height 707?)
 
@@ -1443,9 +1524,13 @@ approxequal
 
 	* uni040E (U+040E): X=107.0,Y=-1.0 (should be at baseline 0?)
 
+	* uni040E (U+040E): X=107.0,Y=-1.0 (should be at baseline 0?)
+
 	* uni0417 (U+0417): X=390.5,Y=708.5 (should be at cap-height 707?)
 
 	* uni0417 (U+0417): X=227.5,Y=0.5 (should be at baseline 0?)
+
+	* uni0423 (U+0423): X=107.0,Y=-1.0 (should be at baseline 0?)
 
 	* uni0423 (U+0423): X=107.0,Y=-1.0 (should be at baseline 0?)
 
@@ -1524,7 +1609,22 @@ approxequal
 	* exclamdown (U+00A1): L<<161.0,330.0>--<163.0,-182.0>> 
 
 	* exclamdown (U+00A1): L<<99.0,-182.0>--<101.0,330.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] Onest-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[16] Onest-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+
+
+* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
+The font may be embedded but must only be installed temporarily on other systems.
+
+No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWeightClass. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2 usWeightClass is '400' when it should be '800'. [code: bad-value]
+</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Onest-Regular.ttf', 'fonts/ttf/Onest-Thin.ttf', 'fonts/ttf/Onest-Black.ttf', 'fonts/ttf/Onest-Medium.ttf', 'fonts/ttf/Onest-Light.ttf', 'fonts/ttf/Onest-ExtraBold.ttf', 'fonts/ttf/Onest-Bold.ttf']. [code: missing-os2-fsselection-bit7]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 982, but got 970 instead [code: ascent]
@@ -1538,8 +1638,8 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID is 'PYRS', a font editor default. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: bad]
+* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+ [code: unknown]
 </div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -1787,7 +1887,22 @@ notequal
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* uni041B (U+041B): L<<270.0,559.0>--<269.0,390.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] Onest-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[15] Onest-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+
+
+* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
+The font may be embedded but must only be installed temporarily on other systems.
+
+No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWeightClass. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2 usWeightClass is '400' when it should be '700'. [code: bad-value]
+</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Onest-Regular.ttf', 'fonts/ttf/Onest-Thin.ttf', 'fonts/ttf/Onest-Black.ttf', 'fonts/ttf/Onest-Medium.ttf', 'fonts/ttf/Onest-Light.ttf', 'fonts/ttf/Onest-ExtraBold.ttf', 'fonts/ttf/Onest-Bold.ttf']. [code: missing-os2-fsselection-bit7]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 982, but got 970 instead [code: ascent]
@@ -1801,8 +1916,8 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID is 'PYRS', a font editor default. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: bad]
+* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+ [code: unknown]
 </div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -1871,7 +1986,7 @@ Width = 646:
 approxequal
 
 Width = 552:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
@@ -1900,9 +2015,9 @@ lessequal, greaterequal
 
 	* ordfeminine (U+00AA): X=288.0,Y=708.5 (should be at cap-height 708?)
 
-	* paragraph (U+00B6): X=229.0,Y=707.0 (should be at cap-height 708?)
-
 	* paragraph (U+00B6): X=709.0,Y=707.0 (should be at cap-height 708?)
+
+	* paragraph (U+00B6): X=229.0,Y=707.0 (should be at cap-height 708?)
 
 	* Aring (U+00C5): X=354.0,Y=968.0 (should be at ascender 970?)
 
@@ -2033,8 +2148,8 @@ lessequal, greaterequal
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 14 | 73 | 849 | 43 | 619 | 0 |
-| 0% | 1% | 5% | 53% | 3% | 39% | 0% |
+| 0 | 34 | 73 | 849 | 43 | 599 | 0 |
+| 0% | 2% | 5% | 53% | 3% | 37% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
