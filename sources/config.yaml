@@ -1,10 +1,10 @@
 sources:
-  - glyphs/Onest-Black.ufo
-  - glyphs/Onest-Bold.ufo
-  - glyphs/Onest-ExtraBold.ufo
-  - glyphs/Onest-Light.ufo
-  - glyphs/Onest-Medium.ufo
-  - glyphs/Onest-Regular.ufo
-  - glyphs/Onest-Thin.ufo
+  - ufo/Onest-Black.ufo
+  - ufo/Onest-Bold.ufo
+  - ufo/Onest-ExtraBold.ufo
+  - ufo/Onest-Light.ufo
+  - ufo/Onest-Medium.ufo
+  - ufo/Onest-Regular.ufo
+  - ufo/Onest-Thin.ufo
 familyName: Onest
 outputDir: "../fonts"

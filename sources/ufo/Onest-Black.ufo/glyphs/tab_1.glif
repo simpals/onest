@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tab_1" format="2">
+  <advance width="674"/>
+  <outline>
+    <contour>
+      <point x="244" y="163" type="line"/>
+      <point x="244" y="489" type="line"/>
+      <point x="94" y="489" type="line"/>
+      <point x="94" y="630" type="line"/>
+      <point x="165" y="630"/>
+      <point x="258" y="635"/>
+      <point x="293" y="708" type="curve"/>
+      <point x="425" y="708" type="line"/>
+      <point x="425" y="163" type="line"/>
+      <point x="575" y="163" type="line"/>
+      <point x="575" y="0" type="line"/>
+      <point x="79" y="0" type="line"/>
+      <point x="79" y="163" type="line"/>
+    </contour>
+  </outline>
+</glyph>
