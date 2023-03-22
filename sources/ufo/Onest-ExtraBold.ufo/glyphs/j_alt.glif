@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="j_alt" format="2">
+  <advance width="298"/>
+  <outline>
+    <contour>
+      <point x="155" y="778" type="curve" smooth="yes"/>
+      <point x="208" y="778"/>
+      <point x="251" y="742"/>
+      <point x="251" y="682" type="curve" smooth="yes"/>
+      <point x="251" y="619"/>
+      <point x="208" y="587"/>
+      <point x="155" y="587" type="curve" smooth="yes"/>
+      <point x="98" y="587"/>
+      <point x="56" y="621"/>
+      <point x="56" y="682" type="curve" smooth="yes"/>
+      <point x="56" y="742"/>
+      <point x="100" y="778"/>
+    </contour>
+    <contour>
+      <point x="-9" y="527" type="line"/>
+      <point x="232" y="527" type="line"/>
+      <point x="232" y="-49" type="line"/>
+      <point x="235" y="-170"/>
+      <point x="179" y="-231"/>
+      <point x="54" y="-231" type="curve" smooth="yes"/>
+      <point x="-31" y="-231" type="line"/>
+      <point x="-31" y="-89" type="line"/>
+      <point x="5" y="-89" type="line" smooth="yes"/>
+      <point x="65" y="-89"/>
+      <point x="75" y="-54"/>
+      <point x="75" y="-18" type="curve" smooth="yes"/>
+      <point x="75" y="386" type="line"/>
+      <point x="-9" y="386" type="line"/>
+    </contour>
+  </outline>
+</glyph>

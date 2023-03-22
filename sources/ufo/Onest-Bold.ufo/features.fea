@@ -1,0 +1,1041 @@
+#> classes
+#/> otclasses
+@calt1 = [zero one two three four five six seven eight nine A B C D E F G H I J K L M N O P Q R S T U V W X Y Z uni0410 uni0411 uni0412 uni0413 uni0414 uni0415 uni0416 uni0417 uni0418 uni0419 uni041A uni041B uni041C uni041D uni041E uni041F uni0420 uni0421 uni0422 uni0423 uni0424 uni0425 uni0426 uni0427 uni0428 uni0429 uni042A uni042B uni042C uni042D uni042E uni042F uni0401 K_alt W_alt Acircumflex Adieresis Ccedilla Ecircumflex Icircumflex Odieresis Udieresis Abreve Idotaccent Scedilla uni0162 uni0218 uni021A uni04C1];
+@calt2 = [o a c d e g q s u y t acircumflex adieresis ccedilla ecircumflex odieresis udieresis u_alt y_alt s_alt c_alt t_alt t2.alt g_alt a_alt abreve scedilla uni0163 uni0219 uni021B uni0430 uni0431 uni0435 uni0437 uni043E uni0441 uni0444 uni044D uni0451 space zero one three five six seven eight nine f v endash emdash uni00AD hyphen.uc uni00AD.uc endash.uc emdash.uc minus hyphen t0163.alt t021b.alt a2_alt a00E2.alt a00E4.alt a0103.alt];
+@pnum1 = [zero one two three four five six seven eight nine period comma colon semicolon quotesingle quotedbl quoteright quotedblright quoteleft quotedblleft quotesinglbase quotedblbase colon.uc];
+@tnum1 = [uniE000 uniE001 uniE002 uniE003 uniE004 uniE005 uniE006 uniE007 uniE008 uniE009 uniE010 uniE011 uniE012 uniE013 uniE014 uniE015 uniE016 uniE017 uniE018 uniE019 uniE020 uniE021 uniE022];
+#/< otclasses
+#< classes
+
+languagesystem DFLT dflt;
+languagesystem cyrl dflt;
+languagesystem latn dflt;
+languagesystem latn AZE ;
+languagesystem latn TRK ;
+languagesystem latn MOL ;
+languagesystem latn ROM ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+feature salt { # 
+ # DEFAULT
+    sub W by W_alt;
+    sub one by alt_1;
+    sub w by w_alt;
+    sub c by c_alt;
+    sub uni0441 by c_alt;
+    sub a by a_alt;
+    sub uni0430 by a_alt;
+    sub s by s_alt;
+    sub i by i_alt;
+    sub I by I_alt;
+    sub j by j_alt;
+    sub y by y_alt;
+    sub K by K_alt;
+    sub k by k_alt;
+    sub l by l_alt;    
+    sub uni041A by K_alt;
+    sub u by u_alt;
+    sub uni0431 by be_alt;
+ script cyrl; # Cyrillic
+    sub W by W_alt;
+    sub one by alt_1;
+    sub w by w_alt;
+    sub c by c_alt;
+    sub uni0441 by c_alt;
+    sub a by a_alt;
+    sub uni0430 by a_alt;
+    sub s by s_alt;
+    sub i by i_alt;
+    sub I by I_alt;
+    sub j by j_alt;
+    sub y by y_alt;
+    sub K by K_alt;
+    sub k by k_alt;
+    sub l by l_alt;    
+    sub uni041A by K_alt;
+    sub u by u_alt;
+    sub uni0431 by be_alt;
+ script latn; # Latin
+    sub W by W_alt;
+    sub one by alt_1;
+    sub w by w_alt;
+    sub c by c_alt;
+    sub uni0441 by c_alt;
+    sub a by a_alt;
+    sub uni0430 by a_alt;
+    sub s by s_alt;
+    sub i by i_alt;
+    sub I by I_alt;
+    sub j by j_alt;
+    sub y by y_alt;
+    sub K by K_alt;
+    sub k by k_alt;
+    sub l by l_alt;    
+    sub uni041A by K_alt;
+    sub u by u_alt;
+    sub uni0431 by be_alt;
+} salt;
+feature case { # Case-Sensitive Forms
+ # DEFAULT
+lookup case01 {
+    sub colon by colon.uc;
+} case01;
+ script cyrl; # Cyrillic
+lookup case01;
+ script latn; # Latin
+lookup case01;
+ language MOL ; # Moldavian
+} case;
+feature calt { # Contextual Alternates
+ # DEFAULT
+    sub @calt1 colon' by colon.uc;
+    sub @calt1 hyphen' by hyphen.uc;
+    sub @calt1 endash' by endash.uc;
+    sub @calt1 emdash' by emdash.uc;
+    sub @calt1 uni00AD' by uni00AD.uc;
+    sub t' @calt2 by t2.alt;
+    sub uni0163' @calt2 by t0163.alt;
+    sub uni021B' @calt2 by t021b.alt;
+    sub asterisk space asterisk by uni202F;
+    sub asterisk M asterisk by logom;
+    sub asterisk m o l d o v a asterisk by logo;
+    sub asterisk M o l d o v a asterisk by logo;
+    sub asterisk uni043C uni043E uni043B uni0434 uni043E uni0432 uni0430 asterisk by logo;
+    sub asterisk uni041C uni043E uni043B uni0434 uni043E uni0432 uni0430 asterisk by logo;
+    sub asterisk uni021A a r a asterisk by map;
+    sub asterisk uni021B a r a asterisk by map;
+    sub asterisk uni0441 uni0442 uni0440 uni0430 uni043D uni0430 asterisk by map;
+    sub asterisk uni0421 uni0442 uni0440 uni0430 uni043D uni0430 asterisk by map;
+    sub asterisk e u r o asterisk by Euro;
+    sub asterisk E u r o asterisk by Euro;
+    sub asterisk uni0435 uni0432 uni0440 uni043E asterisk by Euro;
+    sub asterisk uni0415 uni0432 uni0440 uni043E asterisk by Euro;
+    sub asterisk d o l a r asterisk by dollar;
+    sub asterisk D o l a r asterisk by dollar;
+    sub asterisk uni0434 uni043E uni043B uni043B uni0430 uni0440 asterisk by dollar;
+    sub asterisk uni0414 uni043E uni043B uni043B uni0430 uni0440 asterisk by dollar;
+    sub asterisk r u b l a asterisk by uni20BD;
+    sub asterisk R u b l a asterisk by uni20BD;
+    sub asterisk uni0440 uni0443 uni0431 uni043B uni044C asterisk by uni20BD;
+    sub asterisk uni0420 uni0443 uni0431 uni043B uni044C asterisk by uni20BD;
+    sub asterisk U S D asterisk by dollar;
+    sub asterisk R U B asterisk by uni20BD;
+    sub asterisk E U R asterisk by Euro;
+    sub asterisk G B P asterisk by sterling;
+    sub asterisk U A H asterisk by uni20B4;
+ script cyrl; # Cyrillic
+    sub @calt1 colon' by colon.uc;
+    sub @calt1 hyphen' by hyphen.uc;
+    sub @calt1 endash' by endash.uc;
+    sub @calt1 emdash' by emdash.uc;
+    sub @calt1 uni00AD' by uni00AD.uc;
+    sub t' @calt2 by t2.alt;
+    sub uni0163' @calt2 by t0163.alt;
+    sub uni021B' @calt2 by t021b.alt;
+    sub asterisk space asterisk by uni202F;
+    sub asterisk M asterisk by logom;
+    sub asterisk m o l d o v a asterisk by logo;
+    sub asterisk M o l d o v a asterisk by logo;
+    sub asterisk uni043C uni043E uni043B uni0434 uni043E uni0432 uni0430 asterisk by logo;
+    sub asterisk uni041C uni043E uni043B uni0434 uni043E uni0432 uni0430 asterisk by logo;
+    sub asterisk uni021A a r a asterisk by map;
+    sub asterisk uni021B a r a asterisk by map;
+    sub asterisk uni0441 uni0442 uni0440 uni0430 uni043D uni0430 asterisk by map;
+    sub asterisk uni0421 uni0442 uni0440 uni0430 uni043D uni0430 asterisk by map;
+    sub asterisk e u r o asterisk by Euro;
+    sub asterisk E u r o asterisk by Euro;
+    sub asterisk uni0435 uni0432 uni0440 uni043E asterisk by Euro;
+    sub asterisk uni0415 uni0432 uni0440 uni043E asterisk by Euro;
+    sub asterisk d o l a r asterisk by dollar;
+    sub asterisk D o l a r asterisk by dollar;
+    sub asterisk uni0434 uni043E uni043B uni043B uni0430 uni0440 asterisk by dollar;
+    sub asterisk uni0414 uni043E uni043B uni043B uni0430 uni0440 asterisk by dollar;
+    sub asterisk r u b l a asterisk by uni20BD;
+    sub asterisk R u b l a asterisk by uni20BD;
+    sub asterisk uni0440 uni0443 uni0431 uni043B uni044C asterisk by uni20BD;
+    sub asterisk uni0420 uni0443 uni0431 uni043B uni044C asterisk by uni20BD;
+    sub asterisk U S D asterisk by dollar;
+    sub asterisk R U B asterisk by uni20BD;
+    sub asterisk E U R asterisk by Euro;
+    sub asterisk G B P asterisk by sterling;
+    sub asterisk U A H asterisk by uni20B4;
+ script latn; # Latin
+    sub @calt1 colon' by colon.uc;
+    sub @calt1 hyphen' by hyphen.uc;
+    sub @calt1 endash' by endash.uc;
+    sub @calt1 emdash' by emdash.uc;
+    sub @calt1 uni00AD' by uni00AD.uc;
+    sub t' @calt2 by t2.alt;
+    sub uni0163' @calt2 by t0163.alt;
+    sub uni021B' @calt2 by t021b.alt;
+    sub asterisk space asterisk by uni202F;
+    sub asterisk M asterisk by logom;
+    sub asterisk m o l d o v a asterisk by logo;
+    sub asterisk M o l d o v a asterisk by logo;
+    sub asterisk uni043C uni043E uni043B uni0434 uni043E uni0432 uni0430 asterisk by logo;
+    sub asterisk uni041C uni043E uni043B uni0434 uni043E uni0432 uni0430 asterisk by logo;
+    sub asterisk uni021A a r a asterisk by map;
+    sub asterisk uni021B a r a asterisk by map;
+    sub asterisk uni0441 uni0442 uni0440 uni0430 uni043D uni0430 asterisk by map;
+    sub asterisk uni0421 uni0442 uni0440 uni0430 uni043D uni0430 asterisk by map;
+    sub asterisk e u r o asterisk by Euro;
+    sub asterisk E u r o asterisk by Euro;
+    sub asterisk uni0435 uni0432 uni0440 uni043E asterisk by Euro;
+    sub asterisk uni0415 uni0432 uni0440 uni043E asterisk by Euro;
+    sub asterisk d o l a r asterisk by dollar;
+    sub asterisk D o l a r asterisk by dollar;
+    sub asterisk uni0434 uni043E uni043B uni043B uni0430 uni0440 asterisk by dollar;
+    sub asterisk uni0414 uni043E uni043B uni043B uni0430 uni0440 asterisk by dollar;
+    sub asterisk r u b l a asterisk by uni20BD;
+    sub asterisk R u b l a asterisk by uni20BD;
+    sub asterisk uni0440 uni0443 uni0431 uni043B uni044C asterisk by uni20BD;
+    sub asterisk uni0420 uni0443 uni0431 uni043B uni044C asterisk by uni20BD;
+    sub asterisk U S D asterisk by dollar;
+    sub asterisk R U B asterisk by uni20BD;
+    sub asterisk E U R asterisk by Euro;
+    sub asterisk G B P asterisk by sterling;
+    sub asterisk U A H asterisk by uni20B4;
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+} calt;
+feature ss01 { # 
+ # DEFAULT
+    sub a by a_alt;
+    sub uni0430 by a_alt;
+    sub one by tab_1;
+    sub t by t_alt;
+    sub y by y_alt;
+    sub g by g_alt;
+    sub f by f_alt;
+    sub l by l_alt;
+    sub acircumflex by a00E2.alt;
+    sub adieresis by a00E4.alt;
+    sub abreve by a0103.alt;
+ script cyrl; # Cyrillic
+    sub a by a_alt;
+    sub one by tab_1;
+    sub uni0430 by a_alt;
+    sub t by t_alt;
+    sub y by y_alt;
+    sub g by g_alt;
+    sub f by f_alt;
+    sub l by l_alt;
+    sub acircumflex by a00E2.alt;
+    sub adieresis by a00E4.alt;
+    sub abreve by a0103.alt;
+ script latn; # Latin
+    sub a by a_alt;
+    sub one by tab_1;
+    sub uni0430 by a_alt;
+    sub t by t_alt;
+    sub y by y_alt;
+    sub g by g_alt;
+    sub f by f_alt;
+    sub l by l_alt;
+    sub acircumflex by a00E2.alt;
+    sub adieresis by a00E4.alt;
+    sub abreve by a0103.alt;
+} ss01;
+feature ss02 { # 
+ # DEFAULT
+    sub a by a2_alt;
+    sub uni0430 by a2_alt;
+    sub t by t2.alt;
+    sub y by y2_alt;
+    sub l by l2_alt;
+ script cyrl; # Cyrillic
+    sub a by a2_alt;
+    sub uni0430 by a2_alt;
+    sub t by t2.alt;
+    sub y by y2_alt;
+    sub l by l2_alt;
+ script latn; # Latin
+    sub a by a2_alt;
+    sub uni0430 by a2_alt;
+    sub t by t2.alt;
+    sub y by y2_alt;
+    sub l by l2_alt;
+} ss02;
+feature kern { # Kerning
+@_kern1 = [H B D E F I K M N P R Igrave Iacute Icircumflex Idieresis Eth Ntilde Ugrave Uacute Ucircumflex Udieresis Thorn germandbls Dcaron Dcroat Emacron Ebreve Edotaccent Eogonek Ecaron Hcircumflex Hbar Itilde Imacron Ibreve Iogonek Idotaccent IJ Lacute uni013B Lcaron Ldot Lslash Nacute uni0145 Ncaron Eng Racute uni0156 Rcaron Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek];
+@_kern2 = [H I M N uni0408 Igrave Iacute Icircumflex Idieresis Ntilde Ugrave Uacute Ucircumflex Udieresis Hcircumflex Hbar Itilde Imacron Ibreve Iogonek Idotaccent IJ Jcircumflex Nacute uni0145 Ncaron Eng Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek];
+@_kern3 = [O C G Q S Odieresis Ccedilla Ograve Oacute Ocircumflex Otilde Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent uni0122 Omacron Obreve Ohungarumlaut OE Sacute Scircumflex Scedilla Scaron];
+@_kern4 = [O D Q S G C Odieresis Ccedilla uni0405 Eth Ograve Oacute Ocircumflex Otilde Oslash Cacute Ccircumflex Cdotaccent Ccaron Dcaron Dcroat Gcircumflex Gbreve Gdotaccent uni0122 Omacron Obreve Ohungarumlaut Sacute Scircumflex Scedilla Scaron];
+@_kern5 = [o c d e g q s ccedilla ecircumflex odieresis s_alt c_alt scedilla uni0219 a2_alt egrave eacute edieresis eth ograve oacute ocircumflex otilde oslash cacute ccircumflex cdotaccent ccaron dcaron dcroat emacron ebreve edotaccent eogonek ecaron gcircumflex gbreve gdotaccent uni0123 omacron obreve ohungarumlaut oe sacute scircumflex scaron];
+@_kern6 = [o b e s c p ecircumflex ccedilla odieresis s_alt c_alt uni0219 scedilla egrave eacute edieresis eth ograve oacute ocircumflex otilde oslash cacute ccircumflex cdotaccent ccaron emacron ebreve edotaccent eogonek ecaron omacron obreve ohungarumlaut oe sacute scircumflex scaron];
+@_kern7 = [uni041E uni0417 uni0421 uni042D uni0424];
+@_kern8 = [uni041E uni0421 uni042D uni042E uni0424 uni0417];
+@_kern9 = [uni043E uni0435 uni0437 uni0441 uni0444 uni044D uni0451 a2_alt];
+@_kern10 = [uni043E uni0431 uni0435 uni0437 uni0440 uni0441 uni0444 uni044D uni044E uni0451];
+@_kern11 = [uni043D uni0432 uni0433 uni0438 uni043A uni043C uni043F uni0440 uni0446 uni0447 uni044B uni044C uni044E uni044F uni0448 uni0449];
+@_kern12 = [uni0414 uni0426 uni0429];
+@_kern13 = [uni0434 uni0446 uni0449];
+@_kern14 = [period comma quotedblbase];
+@_kern15 = [semicolon colon];
+@_kern16 = [K K_alt uni0136];
+@_kern17 = [k k_alt uni0137 kgreenlandic];
+@_kern19 = [W W_alt Wcircumflex Wgrave Wacute Wdieresis];
+@_kern20 = [w w_alt wcircumflex wgrave wacute wdieresis];
+@_kern21 = [t t_alt uni021B uni0163 tbar];
+@_kern23 = [uni0413 uni0490];
+@_kern24 = [uni0433 uni0491];
+@_kern27 = [a a_alt acircumflex adieresis a00E2.alt a00E4.alt a0103.alt abreve uni0430 agrave aacute atilde aring amacron aogonek];
+@_kern28 = [T uni0422 uni0162 Tcaron uni021A];
+@_kern29 = [r racute uni0157 rcaron];
+@_kern30 = [A uni0410 Agrave Aacute Acircumflex Atilde Adieresis Aring Amacron Aogonek];
+@_kern31 = [Y Yacute Ycircumflex Ydieresis Ygrave];
+ # DEFAULT
+lookup kern0 {
+   pos space V -80;
+   pos space five 40;
+   pos B V -10;
+   pos B X -10;
+   pos D d 10;
+   pos E quoteright 20;
+   pos F quotedblright 20;
+   pos F quoteright 20;
+   pos F J -30;
+   pos I bracketright 40;
+   pos L V -50;
+   pos L X 10;
+   pos L z 20;
+   pos L quoteright -60;
+   pos L j 20;
+   pos L y2_alt -10;
+   pos L J 30;
+   pos P X -25;
+   pos P comma -60;
+   pos P quotedblbase -60;
+   pos P quotedblright 20;
+   pos P quoteright 20;
+   pos P j -10;
+   pos P C 10;
+   pos P S 10;
+   pos P G 10;
+   pos P Q 10;
+   pos P J -50;
+   pos P Ccedilla 10;
+   pos U comma -60;
+   pos U quotedblbase -60;
+   pos V space -80;
+   pos V m -20;
+   pos V n -20;
+   pos V p -20;
+   pos V u -20;
+   pos V z -20;
+   pos V bracketright 40;
+   pos V braceright 20;
+   pos V quotedblright 10;
+   pos V quoteright 20;
+   pos V J -80;
+   pos X bracketright 40;
+   pos X quoteright 20;
+   pos Z quotesingle 40;
+   pos Z bracketright 20;
+   pos Z quoteright 20;
+   pos b d 10;
+   pos b c 10;
+   pos i bracketright 40;
+   pos i quotedblright 20;
+   pos i quoteright 20;
+   pos l bracketright 40;
+   pos l quotedblright 20;
+   pos l quoteright 20;
+   pos p c 10;
+   pos p f -20;
+   pos q j 20;
+   pos v quotedblright 40;
+   pos v quoteright 40;
+   pos x quotedblright 40;
+   pos x quoteright 40;
+   pos z quotedblright 40;
+   pos z quoteright 40;
+   pos comma U -60;
+   pos quotesingle Z 40;
+   pos quotesingle b 40;
+   pos quotesingle uni0442 40;
+   pos quotesingle uni0422 20;
+   pos quotesingle uni0423 20;
+   pos quotesingle uni0427 20;
+   pos quotesingle f 40;
+   pos quotesingle J -80;
+   pos slash slash -210;
+   pos slash uni0422 30;
+   pos slash uni0423 30;
+   pos colon slash -30;
+   pos colon backslash -70;
+   pos bracketleft I 40;
+   pos bracketleft V 40;
+   pos bracketleft X 40;
+   pos bracketleft Z 20;
+   pos bracketleft i 40;
+   pos bracketleft l 40;
+   pos bracketleft uni0434 40;
+   pos bracketleft uni0425 40;
+   pos bracketleft uni0414 40;
+   pos bracketleft uni0423 40;
+   pos bracketleft j 40;
+   pos bracketleft uni0443 20;
+   pos backslash backslash -210;
+   pos backslash uni0434 60;
+   pos backslash uni0436 40;
+   pos backslash uni0447 -20;
+   pos backslash uni0414 60;
+   pos backslash uni0491 40;
+   pos braceleft V 20;
+   pos braceleft uni0434 40;
+   pos braceleft uni0414 40;
+   pos braceleft uni0423 40;
+   pos braceleft j 40;
+   pos quotedblbase U -60;
+   pos quotedblbase uni0445 20;
+   pos quotedblbase uni0434 60;
+   pos quotedblbase uni0436 20;
+   pos quotedblbase uni043B 40;
+   pos quotedblbase uni0442 -40;
+   pos quotedblbase uni0447 -40;
+   pos quotedblbase uni0410 40;
+   pos quotedblbase uni0425 20;
+   pos quotedblbase uni041B 20;
+   pos quotedblbase uni0414 40;
+   pos quotedblbase uni0416 20;
+   pos quoteright V 20;
+   pos quoteright X 20;
+   pos quoteright Z 20;
+   pos quoteright b 20;
+   pos quoteright i 20;
+   pos quoteright l 20;
+   pos quoteright uni0434 -40;
+   pos quoteright uni0442 40;
+   pos quoteright f 40;
+   pos quoteright j 20;
+   pos quoteright uni0443 40;
+   pos quoteright J -60;
+   pos quotedblleft V 10;
+   pos quotedblleft i 20;
+   pos quotedblleft l 20;
+   pos quotedblleft v 40;
+   pos quotedblleft x 40;
+   pos quotedblleft z 40;
+   pos quotedblleft uni0434 -40;
+   pos quotedblleft uni043B -40;
+   pos quotedblleft uni0442 40;
+   pos quotedblleft uni0444 -30;
+   pos quotedblleft uni0410 -40;
+   pos quotedblleft uni0422 30;
+   pos quotedblleft uni0414 -40;
+   pos quotedblleft uni0423 30;
+   pos quotedblleft f 40;
+   pos quotedblleft y2_alt 40;
+   pos quotedblleft uni0443 40;
+   pos quotedblleft J -100;
+   pos quoteleft V 20;
+   pos quoteleft X 20;
+   pos quoteleft Z 20;
+   pos quoteleft v 40;
+   pos quoteleft x 40;
+   pos quoteleft z 40;
+   pos quoteleft uni0434 -30;
+   pos quoteleft uni043B -30;
+   pos quoteleft uni0442 30;
+   pos quoteleft uni0410 -40;
+   pos quoteleft uni041B -20;
+   pos quoteleft uni0414 -20;
+   pos quoteleft uni0423 40;
+   pos quoteleft uni042A 20;
+   pos quoteleft f 40;
+   pos quoteleft y2_alt 40;
+   pos quoteleft uni0443 30;
+   pos quoteleft J -100;
+   pos uni0431 quoteright 20;
+   pos uni0431 uni0431 15;
+   pos uni0431 uni0444 10;
+   pos uni0431 uni0441 10;
+   pos uni0432 uni0445 -15;
+   pos uni0432 uni0436 -10;
+   pos uni0432 uni044F -10;
+   pos uni0436 slash 30;
+   pos uni0436 uni0430 -10;
+   pos uni043A uni0430 -10;
+   pos uni0442 colon 20;
+   pos uni0442 quotedblright 40;
+   pos uni0442 quoteright 40;
+   pos uni0442 uni0434 -20;
+   pos uni0442 uni0442 30;
+   pos uni0442 uni044A 20;
+   pos uni0442 uni0443 20;
+   pos uni0444 quotedblright -30;
+   pos uni0444 uni0441 10;
+   pos uni044C quotedblright -40;
+   pos uni044C uni0442 -30;
+   pos uni044C uni044F -10;
+   pos uni044E uni0441 10;
+   pos uni0410 quotedblright -40;
+   pos uni0410 quotedblleft -40;
+   pos uni0410 uni0434 10;
+   pos uni0410 uni0436 10;
+   pos uni0410 uni043B 10;
+   pos uni0410 uni0442 -20;
+   pos uni0410 uni0447 -35;
+   pos uni0410 uni0410 15;
+   pos uni0410 uni0422 -50;
+   pos uni0410 uni041B 10;
+   pos uni0410 uni0414 20;
+   pos uni0410 uni0423 -40;
+   pos uni0410 uni0427 -70;
+   pos uni0410 uni0443 -25;
+   pos uni0415 quotedblright 20;
+   pos uni0415 uni043B 10;
+   pos uni0420 quotedblleft 20;
+   pos uni0420 uni0434 -40;
+   pos uni0420 uni043B -35;
+   pos uni0420 uni0442 20;
+   pos uni0420 uni044F -10;
+   pos uni0420 uni0410 -60;
+   pos uni0420 uni0425 -20;
+   pos uni0420 uni0414 -50;
+   pos uni0420 uni0416 -20;
+   pos uni0420 uni0430 -10;
+   pos uni0422 backslash 40;
+   pos uni0422 quotedblright 30;
+   pos uni0422 quotedblleft 40;
+   pos uni0422 uni0445 -20;
+   pos uni0422 uni0434 -40;
+   pos uni0422 uni043B -40;
+   pos uni0422 uni0410 -50;
+   pos uni0422 uni0422 20;
+   pos uni0422 uni0414 -10;
+   pos uni0422 uni0423 10;
+   pos uni0422 uni0451 -30;
+   pos uni0422 parenright 40;
+   pos uni0422 uni0491 -40;
+   pos uni0425 bracketright 40;
+   pos uni0425 uni0417 -20;
+   pos uni0425 uni0424 -20;
+   pos uni0425 uni042D -20;
+   pos uni0425 uni0421 -20;
+   pos uni0412 uni0423 -30;
+   pos uni0411 uni0445 -20;
+   pos uni0411 uni0434 -10;
+   pos uni0411 uni0436 -20;
+   pos uni0411 uni0414 -20;
+   pos uni0411 uni042F -20;
+   pos uni0416 uni0431 -10;
+   pos uni0416 uni0442 -20;
+   pos uni0416 uni0447 -40;
+   pos uni0416 uni0443 -20;
+   pos uni0416 uni0430 -10;
+   pos uni0417 uni0444 10;
+   pos uni0417 uni0410 -15;
+   pos uni0417 uni0425 -20;
+   pos uni041A slash 20;
+   pos uni041A uni0431 -20;
+   pos uni041A uni0443 -30;
+   pos uni041A uni0430 -10;
+   pos uni0423 quotesingle 40;
+   pos uni0423 slash -30;
+   pos uni0423 bracketright 40;
+   pos uni0423 braceright 40;
+   pos uni0423 quotedblright 30;
+   pos uni0423 quoteright 40;
+   pos uni0423 quotedblleft 40;
+   pos uni0423 uni0431 -20;
+   pos uni0423 uni0434 -70;
+   pos uni0423 uni0436 -10;
+   pos uni0423 uni0439 -20;
+   pos uni0423 uni043B -50;
+   pos uni0423 uni0410 -70;
+   pos uni0423 uni0422 10;
+   pos uni0423 uni0414 -40;
+   pos uni0423 uni0423 16;
+   pos uni0423 uni042F -20;
+   pos uni0423 uni0451 -30;
+   pos uni0423 uni0430 -60;
+   pos uni0423 uni0491 -30;
+   pos uni0424 uni0434 -20;
+   pos uni0424 uni0410 -15;
+   pos uni0424 uni0425 -20;
+   pos uni042A quotedblright -40;
+   pos uni042A quoteright -20;
+   pos uni042A uni0422 -50;
+   pos uni042C quotedblright -40;
+   pos uni042C quoteright -40;
+   pos uni042C quotedblleft -60;
+   pos uni042C uni0422 -50;
+   pos uni042C uni0416 -20;
+   pos uni042C uni0427 -30;
+   pos uni042D uni0410 -15;
+   pos uni042D uni0425 -20;
+   pos uni042E uni0410 -15;
+   pos uni042E uni0425 -20;
+   pos uni0440 uni0441 10;
+   pos c c 10;
+   pos e c 10;
+   pos f quotesingle 40;
+   pos f bracketright 40;
+   pos f quotedblright 40;
+   pos f quoteright 50;
+   pos j bracketright 40;
+   pos j quoteright 20;
+   pos j j 20;
+   pos y2_alt quotedblright 40;
+   pos y2_alt quoteright 40;
+   pos uni0443 quotedblright 40;
+   pos uni0443 quoteright 40;
+   pos uni0443 uni0442 10;
+   pos uni0443 uni0443 10;
+   pos uni0451 uni0441 10;
+   pos uni0437 uni0441 10;
+   pos uni044D uni0441 10;
+   pos uni0421 uni0410 -15;
+   pos uni0421 uni0422 -10;
+   pos uni0421 uni0425 -20;
+   pos K_alt d -20;
+   pos k_alt d -10;
+   pos s_alt x -15;
+   pos s_alt c 10;
+   pos s x -15;
+   pos s c 10;
+   pos c_alt x -15;
+   pos c_alt c 10;
+   pos parenleft uni0434 40;
+   pos parenleft uni0422 40;
+   pos parenleft uni0414 40;
+   pos parenleft uni0443 10;
+   pos two two 15;
+   pos two four -20;
+   pos four four 20;
+   pos seven quotesingle 20;
+   pos seven one 20;
+   pos seven three -10;
+   pos seven four -60;
+   pos seven seven 30;
+   pos nine seven -20;
+   pos uni0441 uni0441 10;
+   pos uni0219 x -15;
+   pos uni0219 c 10;
+   pos uni0401 quotedblright 20;
+   pos uni0401 uni043B 10;
+   pos ccedilla x -15;
+   pos ccedilla c 10;
+   pos scedilla x -15;
+   pos scedilla c 10;
+   enum pos @_kern4 V -25;
+   enum pos @_kern4 X -30;
+   enum pos @_kern4 J 10;
+   enum pos [o b e c p ecircumflex odieresis egrave eacute edieresis eth ograve oacute ocircumflex otilde oslash cacute ccircumflex cdotaccent ccaron emacron ebreve edotaccent eogonek ecaron omacron obreve ohungarumlaut oe sacute scircumflex scaron] x -10;
+   enum pos @_kern6 quotedblright -20;
+   enum pos [o b e s c ecircumflex ccedilla odieresis s_alt c_alt uni0219 scedilla egrave eacute edieresis eth ograve oacute ocircumflex otilde oslash cacute ccircumflex cdotaccent ccaron emacron ebreve edotaccent eogonek ecaron omacron obreve ohungarumlaut oe sacute scircumflex scaron] f -10;
+   enum pos @_kern6 y2_alt -5;
+   enum pos @_kern6 parenright -20;
+   enum pos @_kern6 napostrophe -20;
+   enum pos @_kern8 uni0431 10;
+   enum pos @_kern8 uni0442 10;
+   pos uni041E uni0410 -18;
+   enum pos [uni041E uni042D uni042E uni0424 uni0417] uni0422 -20;
+   pos uni041E uni0425 -30;
+   enum pos @_kern8 uni041B -15;
+   enum pos @_kern8 uni0414 -10;
+   enum pos @_kern8 uni0416 -20;
+   enum pos @_kern8 uni0423 -20;
+   enum pos @_kern10 uni0445 -10;
+   enum pos [uni043E uni0435 uni0437 uni0440 uni0441 uni0444 uni044D uni044E uni0451] uni0431 10;
+   enum pos @_kern10 uni0434 -12;
+   enum pos @_kern10 uni0436 -10;
+   enum pos @_kern10 uni043B -5;
+   enum pos @_kern12 slash 50;
+   enum pos @_kern12 colon 30;
+   enum pos @_kern12 bracketright 40;
+   enum pos @_kern12 braceright 40;
+   enum pos @_kern12 uni0434 50;
+   enum pos @_kern12 uni043B 20;
+   enum pos @_kern12 uni0410 20;
+   enum pos @_kern12 uni0422 -10;
+   enum pos @_kern12 uni041B 20;
+   enum pos @_kern12 uni0414 50;
+   enum pos @_kern12 uni0427 -20;
+   enum pos @_kern12 uni042A -20;
+   enum pos @_kern12 uni0440 20;
+   enum pos @_kern12 parenright 40;
+   enum pos @_kern13 slash 30;
+   enum pos @_kern13 colon 20;
+   enum pos @_kern13 bracketright 40;
+   enum pos @_kern13 braceright 40;
+   enum pos @_kern13 uni0434 50;
+   enum pos @_kern13 uni043B 20;
+   enum pos @_kern13 uni0442 -10;
+   enum pos @_kern13 parenright 40;
+   enum pos @_kern14 space -50;
+   pos period U -50;
+   enum pos @_kern14 V -80;
+   enum pos @_kern14 v -30;
+   enum pos @_kern14 quotedblright -50;
+   enum pos @_kern14 quoteright -50;
+   enum pos @_kern14 quotedblleft -50;
+   enum pos @_kern14 quoteleft -50;
+   enum pos [period comma] uni0434 40;
+   enum pos [period comma] uni0442 -30;
+   enum pos [period comma] uni0414 30;
+   enum pos @_kern14 uni0417 -20;
+   enum pos @_kern14 uni0424 -50;
+   enum pos @_kern14 uni0427 -80;
+   enum pos @_kern14 y2_alt -30;
+   enum pos @_kern14 uni0443 -30;
+   enum pos @_kern14 zero -30;
+   enum pos @_kern14 one -30;
+   enum pos @_kern14 two 30;
+   enum pos @_kern14 three 10;
+   enum pos @_kern14 seven -10;
+   enum pos @_kern14 six -30;
+   enum pos @_kern16 v -30;
+   enum pos @_kern16 y2_alt -40;
+   enum pos @_kern19 space -60;
+   enum pos @_kern19 d -25;
+   enum pos @_kern19 quotesingle 40;
+   enum pos @_kern19 bracketright 40;
+   enum pos @_kern19 braceright 20;
+   enum pos @_kern19 quotedblright 10;
+   enum pos @_kern19 quoteright 20;
+   enum pos @_kern19 C -5;
+   enum pos @_kern19 S -5;
+   enum pos @_kern19 G -5;
+   enum pos @_kern19 Q -5;
+   enum pos @_kern19 J -30;
+   enum pos @_kern19 Ccedilla -5;
+   enum pos @_kern20 quotedblright 40;
+   enum pos @_kern20 quoteright 40;
+   enum pos @_kern21 quotesingle 40;
+   enum pos @_kern21 quotedblright 40;
+   enum pos @_kern21 quoteright 40;
+   enum pos @_kern23 quotesingle 40;
+   enum pos @_kern23 quotedblright 20;
+   enum pos @_kern23 quoteright 20;
+   enum pos @_kern23 quotedblleft 40;
+   enum pos @_kern23 uni0445 -20;
+   enum pos @_kern23 uni0431 -20;
+   enum pos @_kern23 uni0432 -50;
+   enum pos @_kern23 uni0434 -70;
+   enum pos @_kern23 uni0436 -20;
+   enum pos @_kern23 uni0439 -40;
+   enum pos @_kern23 uni043B -70;
+   enum pos @_kern23 uni0410 -100;
+   enum pos @_kern23 uni041B -50;
+   enum pos @_kern23 uni0414 -60;
+   enum pos @_kern23 uni042F -20;
+   enum pos @_kern23 uni0443 -20;
+   enum pos @_kern23 uni0451 -50;
+   enum pos @_kern23 uni0430 -80;
+   enum pos @_kern24 colon 20;
+   enum pos @_kern24 quotedblright 40;
+   enum pos @_kern24 quoteright 20;
+   enum pos @_kern24 uni0434 -40;
+   enum pos @_kern24 uni0442 30;
+   enum pos @_kern24 uni0430 -15;
+   enum pos @_kern28 m -20;
+   enum pos @_kern28 n -20;
+   enum pos @_kern28 p -20;
+   enum pos @_kern28 u -20;
+   enum pos @_kern28 quotesingle 40;
+   enum pos @_kern28 bracketright 40;
+   enum pos @_kern28 braceright 40;
+   enum pos [T uni0162 Tcaron uni021A] quotedblright 40;
+   enum pos @_kern28 quoteright 40;
+   enum pos @_kern28 S -10;
+   enum pos @_kern28 G -10;
+   enum pos @_kern28 Q -10;
+   enum pos @_kern28 J -80;
+   enum pos @_kern28 Ccedilla -10;
+   enum pos @_kern29 quotedblright 40;
+   enum pos @_kern29 quoteright 40;
+   enum pos @_kern30 U -10;
+   enum pos @_kern30 V -50;
+   enum pos @_kern30 v -30;
+   enum pos @_kern30 x 5;
+   enum pos @_kern30 quotesingle -20;
+   enum pos @_kern30 quoteright -40;
+   enum pos @_kern30 y2_alt -30;
+   enum pos @_kern30 J 20;
+   enum pos @_kern30 W_alt -40;
+   enum pos @_kern31 m -30;
+   enum pos @_kern31 n -30;
+   enum pos @_kern31 p -30;
+   enum pos @_kern31 u -30;
+   enum pos @_kern31 v -30;
+   enum pos @_kern31 x -20;
+   enum pos @_kern31 z -30;
+   enum pos @_kern31 bracketright 40;
+   enum pos @_kern31 quoteright 20;
+   enum pos @_kern31 f -20;
+   enum pos @_kern31 y2_alt -20;
+   enum pos @_kern31 J -90;
+   subtable;
+   enum pos space @_kern19 -60;
+   enum pos B @_kern19 -10;
+   enum pos B @_kern31 -10;
+   enum pos D @_kern19 -5;
+   enum pos D @_kern14 -20;
+   enum pos D @_kern28 -10;
+   enum pos D @_kern3 15;
+   enum pos E @_kern14 20;
+   enum pos E @_kern15 20;
+   enum pos F @_kern14 -30;
+   enum pos F @_kern30 -50;
+   enum pos F @_kern28 20;
+   enum pos F @_kern27 -30;
+   enum pos F @_kern5 -25;
+   enum pos L @_kern19 -40;
+   enum pos L @_kern31 -80;
+   enum pos L @_kern14 40;
+   enum pos L @_kern30 20;
+   enum pos L @_kern15 20;
+   enum pos L @_kern28 -40;
+   enum pos L @_kern27 10;
+   enum pos L @_kern5 10;
+   enum pos P @_kern31 -15;
+   pos P period -90;
+   enum pos P @_kern30 -50;
+   enum pos P @_kern27 -20;
+   enum pos P @_kern5 -10;
+   enum pos R @_kern31 -20;
+   enum pos R @_kern27 -10;
+   enum pos R @_kern5 -10;
+   pos U period -50;
+   enum pos U @_kern30 -10;
+   enum pos U @_kern27 -20;
+   enum pos U @_kern5 -10;
+   enum pos V @_kern14 -80;
+   enum pos V @_kern30 -50;
+   enum pos V @_kern15 -20;
+   enum pos V @_kern3 -25;
+   enum pos V @_kern27 -50;
+   enum pos V @_kern5 -50;
+   enum pos V @_kern29 -20;
+   enum pos X @_kern14 20;
+   enum pos X @_kern15 20;
+   enum pos X @_kern3 -30;
+   enum pos Z @_kern15 30;
+   enum pos p @_kern21 -20;
+   enum pos v @_kern14 -30;
+   enum pos x @_kern5 -10;
+   enum pos quotesingle @_kern19 40;
+   enum pos quotesingle @_kern30 -20;
+   enum pos quotesingle [T uni0162 Tcaron uni021A] 40;
+   enum pos quotesingle @_kern21 40;
+   enum pos bracketleft @_kern19 40;
+   enum pos bracketleft @_kern31 40;
+   enum pos bracketleft @_kern28 40;
+   enum pos backslash [uni043D uni0432 uni0433 uni0438 uni043A uni043C uni043F uni0440 uni0446 uni044B uni044C uni044E uni044F uni0448 uni0449] 40;
+   enum pos backslash @_kern9 20;
+   enum pos braceleft @_kern19 20;
+   enum pos braceleft @_kern28 40;
+   enum pos quotedblbase [uni041E uni0421 uni042D] -30;
+   enum pos quotedblright @_kern14 -50;
+   enum pos quoteright @_kern19 20;
+   enum pos quoteright @_kern31 20;
+   enum pos quoteright @_kern14 -50;
+   enum pos quoteright @_kern30 -40;
+   enum pos quoteright @_kern28 40;
+   enum pos quoteright @_kern5 -30;
+   enum pos quoteright @_kern17 20;
+   enum pos quoteright [uni043E uni0435 uni0437 uni0441 uni0444 uni044D uni0451] -10;
+   enum pos quotedblleft @_kern19 10;
+   enum pos quotedblleft @_kern20 40;
+   enum pos quotedblleft @_kern14 -50;
+   enum pos quotedblleft [T uni0162 Tcaron uni021A] 40;
+   enum pos quotedblleft @_kern5 -30;
+   enum pos quotedblleft @_kern21 40;
+   enum pos quoteleft @_kern19 20;
+   enum pos quoteleft @_kern31 20;
+   enum pos quoteleft @_kern20 40;
+   enum pos quoteleft @_kern14 -50;
+   enum pos quoteleft [A Agrave Aacute Acircumflex Atilde Adieresis Aring Amacron Aogonek] -60;
+   enum pos quoteleft @_kern28 40;
+   enum pos quoteleft @_kern5 -20;
+   enum pos quoteleft @_kern21 40;
+   enum pos uni0445 @_kern9 -10;
+   enum pos uni0436 @_kern9 -10;
+   enum pos uni043A @_kern9 -10;
+   enum pos uni0442 @_kern14 -30;
+   enum pos uni0410 @_kern7 -15;
+   enum pos uni0420 @_kern14 -90;
+   enum pos uni0420 @_kern7 10;
+   enum pos uni0420 @_kern9 -10;
+   enum pos uni0422 @_kern11 -40;
+   enum pos uni0422 @_kern7 -20;
+   enum pos uni0422 [uni043E uni0435 uni0437 uni0441 uni0444 uni044D a2_alt] -50;
+   pos uni0425 uni041E -30;
+   enum pos uni0416 @_kern7 -20;
+   enum pos uni0416 @_kern9 -20;
+   enum pos uni0417 @_kern14 -20;
+   enum pos uni0417 @_kern7 15;
+   enum pos uni041A @_kern15 20;
+   enum pos uni041A @_kern7 -30;
+   enum pos uni041A @_kern9 -20;
+   enum pos uni0423 @_kern14 -100;
+   enum pos uni0423 @_kern15 -20;
+   enum pos uni0423 @_kern11 -30;
+   enum pos uni0423 @_kern7 -15;
+   enum pos uni0423 [uni043E uni0435 uni0437 uni0441 uni0444 uni044D a2_alt] -55;
+   enum pos uni0424 @_kern14 -50;
+   enum pos f @_kern5 -10;
+   enum pos y2_alt @_kern14 -30;
+   enum pos y2_alt @_kern5 -5;
+   enum pos uni0443 @_kern14 -30;
+   enum pos S @_kern28 -10;
+   enum pos G @_kern28 -10;
+   enum pos Q @_kern15 20;
+   enum pos Q @_kern28 -10;
+   enum pos J @_kern14 -20;
+   enum pos J @_kern30 -10;
+   enum pos K_alt @_kern20 -20;
+   enum pos K_alt @_kern3 -30;
+   enum pos s @_kern21 -10;
+   enum pos parenleft @_kern5 -20;
+   enum pos W_alt @_kern30 -40;
+   enum pos W_alt [O Odieresis Ograve Oacute Ocircumflex Otilde Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent uni0122 Omacron Obreve Ohungarumlaut OE Sacute Scircumflex Scedilla Scaron] -5;
+   enum pos zero @_kern14 -30;
+   enum pos two @_kern14 30;
+   enum pos three @_kern14 -10;
+   enum pos four @_kern14 20;
+   enum pos seven @_kern14 -100;
+   enum pos eight @_kern14 -10;
+   enum pos nine @_kern14 -30;
+   enum pos five @_kern14 -20;
+   enum pos six @_kern14 -20;
+   enum pos Ccedilla @_kern28 -10;
+   enum pos uni0490 @_kern24 -40;
+   enum pos lcaron @_kern5 -60;
+   enum pos tcaron @_kern5 -70;
+   subtable;
+   pos @_kern4 @_kern31 -20;
+   pos @_kern4 @_kern30 -18;
+   pos @_kern4 @_kern3 10;
+   pos @_kern4 @_kern7 10;
+   pos @_kern8 @_kern7 10;
+   pos @_kern12 @_kern14 30;
+   pos @_kern13 @_kern14 40;
+   pos @_kern14 @_kern19 -40;
+   pos @_kern14 @_kern31 -80;
+   pos @_kern14 @_kern30 30;
+   pos @_kern14 @_kern28 -80;
+   pos @_kern14 @_kern3 -20;
+   pos @_kern16 @_kern28 10;
+   pos @_kern16 @_kern27 -10;
+   pos @_kern19 @_kern14 -40;
+   pos @_kern19 @_kern30 -30;
+   pos @_kern19 @_kern27 -35;
+   pos @_kern23 @_kern14 -100;
+   pos @_kern23 @_kern15 -40;
+   pos @_kern23 @_kern24 -50;
+   pos @_kern23 @_kern11 -40;
+   pos @_kern23 @_kern7 -30;
+   pos @_kern23 @_kern9 -80;
+   pos @_kern24 @_kern14 -40;
+   pos @_kern24 @_kern9 -10;
+   pos @_kern28 @_kern14 -80;
+   pos @_kern28 @_kern30 -50;
+   pos @_kern28 @_kern15 -20;
+   pos @_kern28 @_kern28 40;
+   pos @_kern28 @_kern27 -60;
+   pos @_kern28 @_kern5 -50;
+   pos @_kern28 @_kern29 -20;
+   pos @_kern29 @_kern5 -10;
+   pos @_kern29 @_kern21 30;
+   pos @_kern30 @_kern19 -30;
+   pos @_kern30 @_kern31 -60;
+   pos @_kern30 @_kern20 -20;
+   pos @_kern30 @_kern14 30;
+   pos @_kern30 @_kern30 15;
+   pos @_kern30 @_kern15 20;
+   pos @_kern30 @_kern28 -50;
+   pos @_kern30 @_kern3 -15;
+   pos @_kern31 @_kern20 -20;
+   pos @_kern31 @_kern14 -80;
+   pos @_kern31 @_kern30 -60;
+   pos @_kern31 @_kern15 -30;
+   pos @_kern31 @_kern3 -20;
+   pos @_kern31 @_kern27 -70;
+   pos @_kern31 @_kern5 -70;
+   pos @_kern31 @_kern29 -30;
+} kern0;
+ script cyrl; # Cyrillic
+lookup kern0;
+ script latn; # Latin
+lookup kern0;
+} kern;
+feature pnum { # Proportional Figures
+ # DEFAULT
+    sub @tnum1 by @pnum1;
+ script latn; # Latin
+    sub @tnum1 by @pnum1;
+ script cyrl; # Cyrillic
+    sub @tnum1 by @pnum1;
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+} pnum;
+feature tnum { # Tabular Figures
+ # DEFAULT
+    sub @pnum1 by @tnum1;
+ script latn; # Latin
+    sub @pnum1 by @tnum1;
+ script cyrl; # Cyrillic
+    sub @pnum1 by @tnum1;
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+} tnum;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

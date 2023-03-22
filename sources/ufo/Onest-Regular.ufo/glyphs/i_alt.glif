@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="i_alt" format="2">
+  <advance width="257"/>
+  <outline>
+    <contour>
+      <point x="140" y="720" type="curve" smooth="yes"/>
+      <point x="173" y="720"/>
+      <point x="198" y="697"/>
+      <point x="198" y="664" type="curve" smooth="yes"/>
+      <point x="198" y="631"/>
+      <point x="173" y="607"/>
+      <point x="140" y="607" type="curve" smooth="yes"/>
+      <point x="108" y="607"/>
+      <point x="83" y="631"/>
+      <point x="83" y="664" type="curve" smooth="yes"/>
+      <point x="83" y="697"/>
+      <point x="108" y="720"/>
+    </contour>
+    <contour>
+      <point x="98" y="0" type="line"/>
+      <point x="98" y="452" type="line"/>
+      <point x="12" y="452" type="line"/>
+      <point x="12" y="527" type="line"/>
+      <point x="183" y="527" type="line"/>
+      <point x="183" y="0" type="line"/>
+    </contour>
+  </outline>
+</glyph>

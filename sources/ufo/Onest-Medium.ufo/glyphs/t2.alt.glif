@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="t2.alt" format="2">
+  <advance width="412"/>
+  <outline>
+    <contour>
+      <point x="220" y="527" type="line"/>
+      <point x="378" y="527" type="line"/>
+      <point x="378" y="428" type="line"/>
+      <point x="220" y="428" type="line"/>
+      <point x="220" y="196" type="line" smooth="yes"/>
+      <point x="220" y="145"/>
+      <point x="229" y="93"/>
+      <point x="292" y="93" type="curve" smooth="yes"/>
+      <point x="320" y="93"/>
+      <point x="344" y="101"/>
+      <point x="364" y="118" type="curve"/>
+      <point x="402" y="33" type="line"/>
+      <point x="367" y="6"/>
+      <point x="319" y="-6"/>
+      <point x="275" y="-6" type="curve" smooth="yes"/>
+      <point x="160" y="-6"/>
+      <point x="107" y="50"/>
+      <point x="107" y="174" type="curve" smooth="yes"/>
+      <point x="107" y="428" type="line"/>
+      <point x="24" y="428" type="line"/>
+      <point x="24" y="527" type="line"/>
+      <point x="107" y="527" type="line"/>
+      <point x="107" y="677" type="line"/>
+      <point x="220" y="677" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="K_alt" format="2">
+  <advance width="673"/>
+  <outline>
+    <contour>
+      <point x="220" y="404" type="line"/>
+      <point x="499" y="708" type="line"/>
+      <point x="671" y="708" type="line"/>
+      <point x="374" y="393" type="line"/>
+      <point x="669" y="0" type="line"/>
+      <point x="499" y="0" type="line"/>
+      <point x="273" y="301" type="line"/>
+      <point x="220" y="247" type="line"/>
+      <point x="220" y="0" type="line"/>
+      <point x="75" y="0" type="line"/>
+      <point x="75" y="708" type="line"/>
+      <point x="220" y="708" type="line"/>
+    </contour>
+  </outline>
+</glyph>
