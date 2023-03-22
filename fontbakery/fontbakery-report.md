@@ -71,7 +71,7 @@ Width = 446:
 greater, less
 
 Width = 542:
-notequal, equal
+equal, notequal
 
 Width = 477:
 multiply
@@ -1012,7 +1012,7 @@ Width = 467:
 greater, less
 
 Width = 554:
-notequal, equal
+equal, notequal
 
 Width = 526:
 multiply
@@ -1856,7 +1856,7 @@ Width = 485:
 greater, less
 
 Width = 563:
-notequal, equal
+equal, notequal
 
 Width = 571:
 multiply
