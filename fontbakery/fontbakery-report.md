@@ -2,7 +2,7 @@
 
 Fontbakery version: 0.8.11
 
-<details><summary><b>[10] Onest-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+<details><summary><b>[12] Onest-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 982, but got 970 instead [code: ascent]
@@ -16,8 +16,23 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: unknown]
+* ⚠ **WARN** OS/2 VendorID is 'PYRS', a font editor default. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+ [code: bad]
+</div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
+</div></details><details><summary>⚠ <b>WARN:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=14] [code: http-in-license-info]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
 
 
@@ -56,7 +71,7 @@ Width = 446:
 greater, less
 
 Width = 542:
-equal, notequal
+notequal, equal
 
 Width = 477:
 multiply
@@ -178,10 +193,6 @@ greaterequal, lessequal
 
 	* uni040E (U+040E): X=123.0,Y=-1.0 (should be at baseline 0?)
 
-	* uni040E (U+040E): X=123.0,Y=-1.0 (should be at baseline 0?)
-
-	* uni0423 (U+0423): X=116.0,Y=-1.0 (should be at baseline 0?)
-
 	* uni0423 (U+0423): X=116.0,Y=-1.0 (should be at baseline 0?)
 
 	* uni0430 (U+0430): X=297.5,Y=-0.5 (should be at baseline 0?)
@@ -302,8 +313,6 @@ greaterequal, lessequal
 
 	* scedilla (U+015F) contains a short segment B<<272.5,-111.0>-<259.0,-110.0>-<252.0,-110.0>>
 
-	* uni0162 (U+0162) contains a short segment L<<328.0,0.0>--<313.0,0.0>>
-
 	* uni0162 (U+0162) contains a short segment B<<300.0,-59.0>-<305.0,-58.0>-<310.5,-57.5>>
 
 	* uni0162 (U+0162) contains a short segment B<<310.5,-57.5>-<316.0,-57.0>-<321.0,-57.0>>
@@ -313,6 +322,8 @@ greaterequal, lessequal
 	* uni0162 (U+0162) contains a short segment B<<238.5,-252.5>-<230.0,-252.0>-<222.0,-250.0>>
 
 	* uni0162 (U+0162) contains a short segment L<<252.0,0.0>--<241.0,0.0>>
+
+	* uni0162 (U+0162) contains a short segment L<<328.0,0.0>--<313.0,0.0>>
 
 	* uni0163 (U+0163) contains a short segment B<<267.0,0.0>-<264.0,0.0>-<261.0,0.0>>
 
@@ -347,7 +358,7 @@ greaterequal, lessequal
 	* Euro (U+20AC) contains a short segment B<<225.0,347.0>-<225.0,335.0>-<226.0,324.0>> 
 
 	* Euro (U+20AC) contains a short segment B<<226.0,324.0>-<227.0,313.0>-<229.0,303.0>> [code: found-short-segments]
-</div></details><br></div></details><details><summary><b>[11] Onest-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] Onest-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 982, but got 970 instead [code: ascent]
@@ -361,8 +372,23 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: unknown]
+* ⚠ **WARN** OS/2 VendorID is 'PYRS', a font editor default. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+ [code: bad]
+</div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
+</div></details><details><summary>⚠ <b>WARN:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=14] [code: http-in-license-info]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
 
 
@@ -398,7 +424,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 508:
-plus, minus
+minus, plus
 
 Width = 429:
 greater, less
@@ -438,9 +464,9 @@ approxequal
 
 	* section (U+00A7): X=344.5,Y=705.0 (should be at cap-height 707?)
 
-	* uni00B2 (U+00B2): X=137.0,Y=707.5 (should be at cap-height 707?)
+	* twosuperior (U+00B2): X=137.0,Y=707.5 (should be at cap-height 707?)
 
-	* uni00B3 (U+00B3): X=136.5,Y=707.5 (should be at cap-height 707?)
+	* threesuperior (U+00B3): X=136.5,Y=707.5 (should be at cap-height 707?)
 
 	* ordmasculine (U+00BA): X=186.0,Y=708.0 (should be at cap-height 707?)
 
@@ -478,15 +504,11 @@ approxequal
 
 	* uni040E (U+040E): X=109.0,Y=-1.0 (should be at baseline 0?)
 
-	* uni040E (U+040E): X=109.0,Y=-1.0 (should be at baseline 0?)
-
 	* uni0417 (U+0417): X=237.0,Y=708.0 (should be at cap-height 707?)
 
 	* uni0417 (U+0417): X=403.5,Y=2.0 (should be at baseline 0?)
 
 	* uni0417 (U+0417): X=228.0,Y=-1.0 (should be at baseline 0?)
-
-	* uni0423 (U+0423): X=109.0,Y=-1.0 (should be at baseline 0?)
 
 	* uni0423 (U+0423): X=109.0,Y=-1.0 (should be at baseline 0?)
 
@@ -601,7 +623,7 @@ approxequal
 	* exclamdown (U+00A1): L<<101.0,-181.0>--<103.0,349.0>> 
 
 	* exclamdown (U+00A1): L<<140.0,349.0>--<142.0,-181.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[10] Onest-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] Onest-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 982, but got 970 instead [code: ascent]
@@ -615,8 +637,23 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: unknown]
+* ⚠ **WARN** OS/2 VendorID is 'PYRS', a font editor default. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+ [code: bad]
+</div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
+</div></details><details><summary>⚠ <b>WARN:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=14] [code: http-in-license-info]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
 
 
@@ -727,7 +764,7 @@ greaterequal, lessequal
 
 	* dieresis (U+00A8): X=511.5,Y=708.5 (should be at cap-height 708?)
 
-	* uni00B3 (U+00B3): X=105.5,Y=708.5 (should be at cap-height 708?)
+	* threesuperior (U+00B3): X=105.5,Y=708.5 (should be at cap-height 708?)
 
 	* Aring (U+00C5): X=370.0,Y=968.0 (should be at ascender 970?)
 
@@ -906,7 +943,7 @@ greaterequal, lessequal
 	* uni20B4 (U+20B4) contains a short segment B<<206.5,362.5>-<216.0,369.0>-<218.0,370.0>> 
 
 	* uni20B4 (U+20B4) contains a short segment B<<384.0,496.5>-<389.0,506.0>-<389.0,514.0>> [code: found-short-segments]
-</div></details><br></div></details><details><summary><b>[10] Onest-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] Onest-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 982, but got 970 instead [code: ascent]
@@ -920,8 +957,23 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: unknown]
+* ⚠ **WARN** OS/2 VendorID is 'PYRS', a font editor default. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+ [code: bad]
+</div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
+</div></details><details><summary>⚠ <b>WARN:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=14] [code: http-in-license-info]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
 
 
@@ -960,7 +1012,7 @@ Width = 467:
 greater, less
 
 Width = 554:
-equal, notequal
+notequal, equal
 
 Width = 526:
 multiply
@@ -989,8 +1041,6 @@ greaterequal, lessequal
 	* section (U+00A7): X=207.0,Y=706.5 (should be at cap-height 707?)
 
 	* questiondown (U+00BF): X=164.0,Y=2.0 (should be at baseline 0?)
-
-	* Oslash (U+00D8): X=299.0,Y=1.0 (should be at baseline 0?)
 
 	* Oslash (U+00D8): X=471.0,Y=708.0 (should be at cap-height 707?)
 
@@ -1185,7 +1235,7 @@ greaterequal, lessequal
 	* uni0443 (U+0443) contains a short segment L<<88.0,-149.0>--<96.0,-149.0>> 
 
 	* uni045E (U+045E) contains a short segment L<<88.0,-149.0>--<96.0,-149.0>> [code: found-short-segments]
-</div></details><br></div></details><details><summary><b>[11] Onest-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] Onest-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 982, but got 970 instead [code: ascent]
@@ -1199,8 +1249,23 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: unknown]
+* ⚠ **WARN** OS/2 VendorID is 'PYRS', a font editor default. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+ [code: bad]
+</div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
+</div></details><details><summary>⚠ <b>WARN:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=14] [code: http-in-license-info]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
 
 
@@ -1236,7 +1301,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 518:
-plus, minus
+minus, plus
 
 Width = 441:
 greater, less
@@ -1268,7 +1333,7 @@ approxequal
 
 	* y (U+0079): X=466.0,Y=1.0 (should be at baseline 0?)
 
-	* uni00B3 (U+00B3): X=230.5,Y=709.0 (should be at cap-height 707?)
+	* threesuperior (U+00B3): X=230.5,Y=709.0 (should be at cap-height 707?)
 
 	* atilde (U+00E3): X=142.0,Y=707.5 (should be at cap-height 707?)
 
@@ -1378,13 +1443,9 @@ approxequal
 
 	* uni040E (U+040E): X=107.0,Y=-1.0 (should be at baseline 0?)
 
-	* uni040E (U+040E): X=107.0,Y=-1.0 (should be at baseline 0?)
-
 	* uni0417 (U+0417): X=390.5,Y=708.5 (should be at cap-height 707?)
 
 	* uni0417 (U+0417): X=227.5,Y=0.5 (should be at baseline 0?)
-
-	* uni0423 (U+0423): X=107.0,Y=-1.0 (should be at baseline 0?)
 
 	* uni0423 (U+0423): X=107.0,Y=-1.0 (should be at baseline 0?)
 
@@ -1463,7 +1524,7 @@ approxequal
 	* exclamdown (U+00A1): L<<161.0,330.0>--<163.0,-182.0>> 
 
 	* exclamdown (U+00A1): L<<99.0,-182.0>--<101.0,330.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] Onest-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] Onest-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 982, but got 970 instead [code: ascent]
@@ -1477,8 +1538,23 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: unknown]
+* ⚠ **WARN** OS/2 VendorID is 'PYRS', a font editor default. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+ [code: bad]
+</div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
+</div></details><details><summary>⚠ <b>WARN:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=14] [code: http-in-license-info]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
 
 
@@ -1711,7 +1787,7 @@ notequal
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* uni041B (U+041B): L<<270.0,559.0>--<269.0,390.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[10] Onest-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] Onest-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 982, but got 970 instead [code: ascent]
@@ -1725,8 +1801,23 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: unknown]
+* ⚠ **WARN** OS/2 VendorID is 'PYRS', a font editor default. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+ [code: bad]
+</div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
+</div></details><details><summary>⚠ <b>WARN:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=14] [code: http-in-license-info]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
 
 
@@ -1765,7 +1856,7 @@ Width = 485:
 greater, less
 
 Width = 563:
-equal, notequal
+notequal, equal
 
 Width = 571:
 multiply
@@ -1809,9 +1900,9 @@ greaterequal, lessequal
 
 	* ordfeminine (U+00AA): X=288.0,Y=708.5 (should be at cap-height 708?)
 
-	* paragraph (U+00B6): X=709.0,Y=707.0 (should be at cap-height 708?)
-
 	* paragraph (U+00B6): X=229.0,Y=707.0 (should be at cap-height 708?)
+
+	* paragraph (U+00B6): X=709.0,Y=707.0 (should be at cap-height 708?)
 
 	* Aring (U+00C5): X=354.0,Y=968.0 (should be at ascender 970?)
 
@@ -1942,8 +2033,8 @@ greaterequal, lessequal
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 14 | 59 | 849 | 43 | 633 | 0 |
-| 0% | 1% | 4% | 53% | 3% | 40% | 0% |
+| 0 | 14 | 73 | 849 | 43 | 619 | 0 |
+| 0% | 1% | 5% | 53% | 3% | 39% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
