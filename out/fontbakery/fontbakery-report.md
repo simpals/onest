@@ -68,7 +68,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 518:
-minus, plus
+plus, minus
 
 Width = 441:
 greater, less
@@ -623,7 +623,7 @@ Width = 467:
 greater, less
 
 Width = 554:
-equal, notequal
+notequal, equal
 
 Width = 526:
 multiply
@@ -912,7 +912,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 508:
-minus, plus
+plus, minus
 
 Width = 429:
 greater, less
@@ -1180,7 +1180,7 @@ Width = 485:
 greater, less
 
 Width = 563:
-equal, notequal
+notequal, equal
 
 Width = 571:
 multiply
@@ -1420,7 +1420,7 @@ Width = 446:
 greater, less
 
 Width = 542:
-equal, notequal
+notequal, equal
 
 Width = 477:
 multiply
