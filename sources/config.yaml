@@ -1,12 +1,28 @@
 sources:
-  - ufo/Onest-Black.ufo
-  - ufo/Onest-Bold.ufo
-  - ufo/Onest-ExtraBold.ufo
-  - ufo/Onest-Light.ufo
-  - ufo/Onest-Medium.ufo
-  - ufo/Onest-Regular.ufo
-  - ufo/Onest-Thin.ufo
-familyName: Onest
+  - Onest.glyphs
 axisOrder:
   - wght
-outputDir: "../fonts"
+familyName: Onest
+stat:
+  Onest[wght].ttf:
+  - name: Weight
+    tag: wght
+    values:
+    - name: ExtraLight
+      value: 200
+    - name: Light
+      value: 300
+    - name: Regular
+      value: 400
+      linkedValue: 700
+      flags: 2
+    - name: Medium
+      value: 500
+    - name: SemiBold
+      value: 600
+    - name: Bold
+      value: 700
+    - name: ExtraBold
+      value: 800
+    - name: Black
+      value: 900
