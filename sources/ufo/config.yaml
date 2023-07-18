@@ -1,0 +1,12 @@
+sources:
+  - ufo/Onest-Black.ufo
+  - ufo/Onest-Bold.ufo
+  - ufo/Onest-ExtraBold.ufo
+  - ufo/Onest-Light.ufo
+  - ufo/Onest-Medium.ufo
+  - ufo/Onest-Regular.ufo
+  - ufo/Onest-Thin.ufo
+familyName: Onest
+axisOrder:
+  - wght
+outputDir: "../fonts"
