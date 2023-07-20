@@ -1,11 +1,6 @@
 {
 .appVersion = "3201";
 .formatVersion = 3;
-DisplayStrings = (
-"/a_alt",
-a,
-"а"
-);
 axes = (
 {
 name = Weight;
@@ -52,17 +47,17 @@ featurePrefixes = (
 automatic = 1;
 code = "languagesystem DFLT dflt;
 
-languagesystem cyrl dflt;
-
 languagesystem latn dflt;
-languagesystem latn MOL;
 languagesystem latn AZE;
 languagesystem latn CRT;
 languagesystem latn KAZ;
 languagesystem latn TAT;
 languagesystem latn TRK;
 languagesystem latn ROM;
+languagesystem latn MOL;
 languagesystem latn CAT;
+
+languagesystem cyrl dflt;
 ";
 name = Languagesystems;
 }
@@ -70,8 +65,7 @@ name = Languagesystems;
 features = (
 {
 automatic = 1;
-code = "feature case;
-feature locl;
+code = "feature locl;
 feature sups;
 feature ordn;
 feature salt;
@@ -155,9 +149,9 @@ code = " #
     sub one by alt_1;
     sub w by w_alt;
     sub c by c_alt;
-    sub uni0441 by c_alt;
+    sub es-cy by c_alt;
     sub a by a_alt;
-    sub uni0430 by a_alt;
+    sub a-cy by a_alt;
     sub s by s_alt;
     sub i by i_alt;
     sub I by I_alt;
@@ -166,17 +160,17 @@ code = " #
     sub K by K_alt;
     sub k by k_alt;
     sub l by l_alt;    
-    sub uni041A by K_alt;
+    sub Ka-cy by K_alt;
     sub u by u_alt;
-    sub uni0431 by be_alt;
+    sub be-cy by be_alt;
  script cyrl; # Cyrillic
     sub W by W_alt;
     sub one by alt_1;
     sub w by w_alt;
     sub c by c_alt;
-    sub uni0441 by c_alt;
+    sub es-cy by c_alt;
     sub a by a_alt;
-    sub uni0430 by a_alt;
+    sub a-cy by a_alt;
     sub s by s_alt;
     sub i by i_alt;
     sub I by I_alt;
@@ -185,17 +179,17 @@ code = " #
     sub K by K_alt;
     sub k by k_alt;
     sub l by l_alt;    
-    sub uni041A by K_alt;
+    sub Ka-cy by K_alt;
     sub u by u_alt;
-    sub uni0431 by be_alt;
+    sub be-cy by be_alt;
  script latn; # Latin
     sub W by W_alt;
     sub one by alt_1;
     sub w by w_alt;
     sub c by c_alt;
-    sub uni0441 by c_alt;
+    sub es-cy by c_alt;
     sub a by a_alt;
-    sub uni0430 by a_alt;
+    sub a-cy by a_alt;
     sub s by s_alt;
     sub i by i_alt;
     sub I by I_alt;
@@ -204,9 +198,10 @@ code = " #
     sub K by K_alt;
     sub k by k_alt;
     sub l by l_alt;    
-    sub uni041A by K_alt;
+    sub Ka-cy by K_alt;
     sub u by u_alt;
-    sub uni0431 by be_alt;";
+    sub be-cy by be_alt;
+";
 tag = salt;
 },
 {
@@ -226,109 +221,107 @@ code = " # Contextual Alternates
     sub @calt1 endash' by endash.case;
     sub @calt1 emdash' by emdash.case;
     sub t' @calt2 by t2.alt;
-    sub uni0163' @calt2 by t0163.alt;
-    sub uni021B' @calt2 by t021b.alt;
-    sub asterisk space asterisk by uni202F;
+    sub tcedilla' @calt2 by t0163.alt;
+    sub tcommaaccent' @calt2 by t021b.alt;
+    sub asterisk space asterisk by narrownbspace;
     sub asterisk M asterisk by logom;
     sub asterisk m o l d o v a asterisk by logo;
     sub asterisk M o l d o v a asterisk by logo;
-    sub asterisk uni043C uni043E uni043B uni0434 uni043E uni0432 uni0430 asterisk by logo;
-    sub asterisk uni041C uni043E uni043B uni0434 uni043E uni0432 uni0430 asterisk by logo;
-    sub asterisk uni021A a r a asterisk by map;
-    sub asterisk uni021B a r a asterisk by map;
-    sub asterisk uni0441 uni0442 uni0440 uni0430 uni043D uni0430 asterisk by map;
-    sub asterisk uni0421 uni0442 uni0440 uni0430 uni043D uni0430 asterisk by map;
-    sub asterisk e u r o asterisk by Euro;
-    sub asterisk E u r o asterisk by Euro;
-    sub asterisk uni0435 uni0432 uni0440 uni043E asterisk by Euro;
-    sub asterisk uni0415 uni0432 uni0440 uni043E asterisk by Euro;
+    sub asterisk em-cy o-cy el-cy de-cy o-cy ve-cy a-cy asterisk by logo;
+    sub asterisk Em-cy o-cy el-cy de-cy o-cy ve-cy a-cy asterisk by logo;
+    sub asterisk Tcommaaccent a r a asterisk by map;
+    sub asterisk tcommaaccent a r a asterisk by map;
+    sub asterisk es-cy te-cy er-cy a-cy en-cy a-cy asterisk by map;
+    sub asterisk Es-cy te-cy er-cy a-cy en-cy a-cy asterisk by map;
+    sub asterisk e u r o asterisk by euro;
+    sub asterisk E u r o asterisk by euro;
+    sub asterisk ie-cy u-cy er-cy o-cy asterisk by euro;
+    sub asterisk Ie-cy u-cy er-cy o-cy asterisk by euro;
     sub asterisk d o l a r asterisk by dollar;
     sub asterisk D o l a r asterisk by dollar;
-    sub asterisk uni0434 uni043E uni043B uni043B uni0430 uni0440 asterisk by dollar;
-    sub asterisk uni0414 uni043E uni043B uni043B uni0430 uni0440 asterisk by dollar;
-    sub asterisk r u b l a asterisk by uni20BD;
-    sub asterisk R u b l a asterisk by uni20BD;
-    sub asterisk uni0440 uni0443 uni0431 uni043B uni044C asterisk by uni20BD;
-    sub asterisk uni0420 uni0443 uni0431 uni043B uni044C asterisk by uni20BD;
+    sub asterisk de-cy o-cy el-cy el-cy a-cy er-cy asterisk by dollar;
+    sub asterisk De-cy o-cy el-cy el-cy a-cy er-cy asterisk by dollar;
+    sub asterisk r u b l a asterisk by ruble;
+    sub asterisk R u b l a asterisk by ruble;
+    sub asterisk er-cy u-cy be-cy el-cy softsign-cy asterisk by ruble;
+    sub asterisk Er-cy u-cy be-cy el-cy softsign-cy asterisk by ruble;
     sub asterisk U S D asterisk by dollar;
-    sub asterisk R U B asterisk by uni20BD;
-    sub asterisk E U R asterisk by Euro;
+    sub asterisk R U B asterisk by ruble;
+    sub asterisk E U R asterisk by euro;
     sub asterisk G B P asterisk by sterling;
-    sub asterisk U A H asterisk by uni20B4;
+    sub asterisk U A H asterisk by hryvnia;
  script cyrl; # Cyrillic
-    sub @calt1 colon' by colon.uc;
-    sub @calt1 hyphen' by hyphen.uc;
-    sub @calt1 endash' by endash.uc;
-    sub @calt1 emdash' by emdash.uc;
-    sub @calt1 uni00AD' by uni00AD.uc;
+    sub @calt1 colon' by colon.case;
+    sub @calt1 hyphen' by hyphen.case;
+    sub @calt1 endash' by endash.case;
+    sub @calt1 emdash' by emdash.case;
     sub t' @calt2 by t2.alt;
-    sub uni0163' @calt2 by t0163.alt;
-    sub uni021B' @calt2 by t021b.alt;
-    sub asterisk space asterisk by uni202F;
+    sub tcedilla' @calt2 by t0163.alt;
+    sub tcommaaccent' @calt2 by t021b.alt;
+    sub asterisk space asterisk by narrownbspace;
     sub asterisk M asterisk by logom;
     sub asterisk m o l d o v a asterisk by logo;
     sub asterisk M o l d o v a asterisk by logo;
-    sub asterisk uni043C uni043E uni043B uni0434 uni043E uni0432 uni0430 asterisk by logo;
-    sub asterisk uni041C uni043E uni043B uni0434 uni043E uni0432 uni0430 asterisk by logo;
-    sub asterisk uni021A a r a asterisk by map;
-    sub asterisk uni021B a r a asterisk by map;
-    sub asterisk uni0441 uni0442 uni0440 uni0430 uni043D uni0430 asterisk by map;
-    sub asterisk uni0421 uni0442 uni0440 uni0430 uni043D uni0430 asterisk by map;
-    sub asterisk e u r o asterisk by Euro;
-    sub asterisk E u r o asterisk by Euro;
-    sub asterisk uni0435 uni0432 uni0440 uni043E asterisk by Euro;
-    sub asterisk uni0415 uni0432 uni0440 uni043E asterisk by Euro;
+    sub asterisk em-cy o-cy el-cy de-cy o-cy ve-cy a-cy asterisk by logo;
+    sub asterisk Em-cy o-cy el-cy de-cy o-cy ve-cy a-cy asterisk by logo;
+    sub asterisk Tcommaaccent a r a asterisk by map;
+    sub asterisk tcommaaccent a r a asterisk by map;
+    sub asterisk es-cy te-cy er-cy a-cy en-cy a-cy asterisk by map;
+    sub asterisk Es-cy te-cy er-cy a-cy en-cy a-cy asterisk by map;
+    sub asterisk e u r o asterisk by euro;
+    sub asterisk E u r o asterisk by euro;
+    sub asterisk ie-cy u-cy er-cy o-cy asterisk by euro;
+    sub asterisk Ie-cy u-cy er-cy o-cy asterisk by euro;
     sub asterisk d o l a r asterisk by dollar;
     sub asterisk D o l a r asterisk by dollar;
-    sub asterisk uni0434 uni043E uni043B uni043B uni0430 uni0440 asterisk by dollar;
-    sub asterisk uni0414 uni043E uni043B uni043B uni0430 uni0440 asterisk by dollar;
-    sub asterisk r u b l a asterisk by uni20BD;
-    sub asterisk R u b l a asterisk by uni20BD;
-    sub asterisk uni0440 uni0443 uni0431 uni043B uni044C asterisk by uni20BD;
-    sub asterisk uni0420 uni0443 uni0431 uni043B uni044C asterisk by uni20BD;
+    sub asterisk de-cy o-cy el-cy el-cy a-cy er-cy asterisk by dollar;
+    sub asterisk De-cy o-cy el-cy el-cy a-cy er-cy asterisk by dollar;
+    sub asterisk r u b l a asterisk by ruble;
+    sub asterisk R u b l a asterisk by ruble;
+    sub asterisk er-cy u-cy be-cy el-cy softsign-cy asterisk by ruble;
+    sub asterisk Er-cy u-cy be-cy el-cy softsign-cy asterisk by ruble;
     sub asterisk U S D asterisk by dollar;
-    sub asterisk R U B asterisk by uni20BD;
-    sub asterisk E U R asterisk by Euro;
+    sub asterisk R U B asterisk by ruble;
+    sub asterisk E U R asterisk by euro;
     sub asterisk G B P asterisk by sterling;
-    sub asterisk U A H asterisk by uni20B4;
- script latn; # Latin
-    sub @calt1 colon' by colon.uc;
-    sub @calt1 hyphen' by hyphen.uc;
-    sub @calt1 endash' by endash.uc;
-    sub @calt1 emdash' by emdash.uc;
-    sub @calt1 uni00AD' by uni00AD.uc;
+    sub asterisk U A H asterisk by hryvnia;
+script latn; # Latin
+       sub @calt1 colon' by colon.case;
+    sub @calt1 hyphen' by hyphen.case;
+    sub @calt1 endash' by endash.case;
+    sub @calt1 emdash' by emdash.case;
     sub t' @calt2 by t2.alt;
-    sub uni0163' @calt2 by t0163.alt;
-    sub uni021B' @calt2 by t021b.alt;
-    sub asterisk space asterisk by uni202F;
+    sub tcedilla' @calt2 by t0163.alt;
+    sub tcommaaccent' @calt2 by t021b.alt;
+    sub asterisk space asterisk by narrownbspace;
     sub asterisk M asterisk by logom;
     sub asterisk m o l d o v a asterisk by logo;
     sub asterisk M o l d o v a asterisk by logo;
-    sub asterisk uni043C uni043E uni043B uni0434 uni043E uni0432 uni0430 asterisk by logo;
-    sub asterisk uni041C uni043E uni043B uni0434 uni043E uni0432 uni0430 asterisk by logo;
-    sub asterisk uni021A a r a asterisk by map;
-    sub asterisk uni021B a r a asterisk by map;
-    sub asterisk uni0441 uni0442 uni0440 uni0430 uni043D uni0430 asterisk by map;
-    sub asterisk uni0421 uni0442 uni0440 uni0430 uni043D uni0430 asterisk by map;
-    sub asterisk e u r o asterisk by Euro;
-    sub asterisk E u r o asterisk by Euro;
-    sub asterisk uni0435 uni0432 uni0440 uni043E asterisk by Euro;
-    sub asterisk uni0415 uni0432 uni0440 uni043E asterisk by Euro;
+    sub asterisk em-cy o-cy el-cy de-cy o-cy ve-cy a-cy asterisk by logo;
+    sub asterisk Em-cy o-cy el-cy de-cy o-cy ve-cy a-cy asterisk by logo;
+    sub asterisk Tcommaaccent a r a asterisk by map;
+    sub asterisk tcommaaccent a r a asterisk by map;
+    sub asterisk es-cy te-cy er-cy a-cy en-cy a-cy asterisk by map;
+    sub asterisk Es-cy te-cy er-cy a-cy en-cy a-cy asterisk by map;
+    sub asterisk e u r o asterisk by euro;
+    sub asterisk E u r o asterisk by euro;
+    sub asterisk ie-cy u-cy er-cy o-cy asterisk by euro;
+    sub asterisk Ie-cy u-cy er-cy o-cy asterisk by euro;
     sub asterisk d o l a r asterisk by dollar;
     sub asterisk D o l a r asterisk by dollar;
-    sub asterisk uni0434 uni043E uni043B uni043B uni0430 uni0440 asterisk by dollar;
-    sub asterisk uni0414 uni043E uni043B uni043B uni0430 uni0440 asterisk by dollar;
-    sub asterisk r u b l a asterisk by uni20BD;
-    sub asterisk R u b l a asterisk by uni20BD;
-    sub asterisk uni0440 uni0443 uni0431 uni043B uni044C asterisk by uni20BD;
-    sub asterisk uni0420 uni0443 uni0431 uni043B uni044C asterisk by uni20BD;
+    sub asterisk de-cy o-cy el-cy el-cy a-cy er-cy asterisk by dollar;
+    sub asterisk De-cy o-cy el-cy el-cy a-cy er-cy asterisk by dollar;
+    sub asterisk r u b l a asterisk by ruble;
+    sub asterisk R u b l a asterisk by ruble;
+    sub asterisk er-cy u-cy be-cy el-cy softsign-cy asterisk by ruble;
+    sub asterisk Er-cy u-cy be-cy el-cy softsign-cy asterisk by ruble;
     sub asterisk U S D asterisk by dollar;
-    sub asterisk R U B asterisk by uni20BD;
-    sub asterisk E U R asterisk by Euro;
+    sub asterisk R U B asterisk by ruble;
+    sub asterisk E U R asterisk by euro;
     sub asterisk G B P asterisk by sterling;
-    sub asterisk U A H asterisk by uni20B4;
- language MOL ; # Moldavian
- language ROM ; # Romanian
+    sub asterisk U A H asterisk by hryvnia; 
+language MOL ; # Moldavian
+language ROM ; # Romanian
 ";
 tag = calt;
 },
