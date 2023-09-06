@@ -1,2 +1,2 @@
-#Dmitri Voloshin <revoloshin@gmail.com>
-#Andrey Kudryavtsev <fonterior@gmail.com>
+Dmitri Voloshin <revoloshin@gmail.com>
+Andrey Kudryavtsev <fonterior@gmail.com>
