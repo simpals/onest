@@ -14,19 +14,9 @@ code = "o a c d e g q s u y t acircumflex adieresis ccedilla ecircumflex odieres
 name = calt2;
 },
 {
-code = "zero one two three four five six seven eight nine period comma colon semicolon quotesingle quotedbl quoteright quotedblright quoteleft quotedblleft quotesinglbase quotedblbase colon.case
-";
-name = pnum1;
-},
-{
 code = "zero one two three four five six seven eight nine A B C D E F G H I J K L M N O P Q R S T U V W X Y Z A-cy Be-cy Ve-cy Ge-cy Geupturn-cy De-cy Ie-cy Io-cy Zhe-cy Ze-cy Ii-cy Iishort-cy Ka-cy El-cy Em-cy En-cy O-cy Pe-cy Er-cy Es-cy Te-cy U-cy Ushort-cy Ef-cy Ha-cy Che-cy Tse-cy Sha-cy Shcha-cy Softsign-cy Yeru-cy Hardsign-cy Dze-cy E-cy Ereversed-cy I-cy Yi-cy Je-cy Yu-cy Ya-cy Zhebreve-cy  K_alt W_alt Acircumflex Adieresis Ccedilla Ecircumflex Icircumflex Odieresis Udieresis Abreve Idotaccent Scedilla Tcedilla Scommaaccent Tcommaaccent
 ";
 name = calt1;
-},
-{
-code = "zero one two three four five six seven eight nine period comma colon semicolon quotesingle quotedbl quoteright quotedblright quoteleft quotedblleft quotesinglbase quotedblbase colon.case
-";
-name = pnum1;
 }
 );
 customParameters = (
@@ -81,13 +71,18 @@ tag = aalt;
 {
 code = "lookup ccmp_Other_1 {
 	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
-	@CombiningNonTopAccents = [cedillacomb ogonekcomb];
 	lookupflag UseMarkFilteringSet @CombiningTopAccents;
 	sub i' @CombiningTopAccents by idotless;
 	sub j' @CombiningTopAccents by jdotless;
 	sub iogonek' @CombiningTopAccents by idotless ogonekcomb;
-	sub iogonek' @CombiningNonTopAccents @CombiningTopAccents by idotless ogonekcomb;
 } ccmp_Other_1;
+
+lookup ccmp_latn_1 {
+	sub Ldot by L periodcentered.loclCAT.case;
+} ccmp_latn_1;
+
+script latn;
+lookup ccmp_latn_1;
 ";
 tag = ccmp;
 },
@@ -121,8 +116,8 @@ lookup locl_latn_1;
 script latn;
 language CAT;
 lookup locl_latn_2 {
-	sub  l' periodcentered' l by ldot;
-	sub  L' periodcentered' L by Ldot;
+	sub l periodcentered' l by periodcentered.loclCAT;
+	sub L periodcentered' L by periodcentered.loclCAT.case;
 } locl_latn_2;
 ";
 tag = locl;
@@ -207,6 +202,7 @@ tag = salt;
 {
 automatic = 1;
 code = "sub colon by colon.case;
+sub periodcentered.loclCAT by periodcentered.loclCAT.case;
 sub hyphen by hyphen.case;
 sub endash by endash.case;
 sub emdash by emdash.case;
@@ -413,8 +409,8 @@ sub six.tf by six;
 sub seven.tf by seven;
 sub eight.tf by eight;
 sub nine.tf by nine;
-sub comma.tf by comma;
 sub period.tf by period;
+sub comma.tf by comma;
 sub colon.tf by colon;
 sub semicolon.tf by semicolon;
 sub colon.case.tf by colon.case;
@@ -441,8 +437,8 @@ sub six by six.tf;
 sub seven by seven.tf;
 sub eight by eight.tf;
 sub nine by nine.tf;
-sub comma by comma.tf;
 sub period by period.tf;
+sub comma by comma.tf;
 sub colon by colon.tf;
 sub semicolon by semicolon.tf;
 sub colon.case by colon.case.tf;
