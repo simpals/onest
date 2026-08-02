@@ -1,16 +1,18 @@
 # Onest
 
-[![][Fontbakery]](https://simpals.github.io/onest/fontbakery/fontbakery-report.html)
-[![][Universal]](https://simpals.github.io/onest/fontbakery/fontbakery-report.html)
-[![][GF Profile]](https://simpals.github.io/onest/fontbakery/fontbakery-report.html)
-[![][Outline Correctness]](https://simpals.github.io/onest/fontbakery/fontbakery-report.html)
-[![][Shaping]](https://simpals.github.io/onest/fontbakery/fontbakery-report.html)
+[![][Fontspector]](https://simpals.github.io/onest/fontspector/fontspector-report.html)
+[![][OpenType]](https://simpals.github.io/onest/fontspector/fontspector-report.html)
+[![][Universal]](https://simpals.github.io/onest/fontspector/fontspector-report.html)
+[![][Google Fonts]](https://simpals.github.io/onest/fontspector/fontspector-report.html)
+[![][Outline Correctness]](https://simpals.github.io/onest/fontspector/fontspector-report.html)
+[![][Glyphset]](https://simpals.github.io/onest/fontspector/fontspector-report.html)
 
-[Fontbakery]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsimpals%2Fonest%2Fgh-pages%2Fbadges%2Foverall.json
-[GF Profile]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsimpals%2Fonest%2Fgh-pages%2Fbadges%2FGoogleFonts.json
-[Outline Correctness]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsimpals%2Fonest%2Fgh-pages%2Fbadges%2FOutlineCorrectnessChecks.json
-[Shaping]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsimpals%2Fonest%2Fgh-pages%2Fbadges%2FShapingChecks.json
-[Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsimpals%2Fonest%2Fgh-pages%2Fbadges%2FUniversal.json
+[Fontspector]: https://img.shields.io/endpoint?url=https%3A%2F%2Fsimpals.github.io%2Fonest%2Fbadges%2FFontspectorQA.json
+[OpenType]: https://img.shields.io/endpoint?url=https%3A%2F%2Fsimpals.github.io%2Fonest%2Fbadges%2FOpentypeSpecificationChecks.json
+[Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fsimpals.github.io%2Fonest%2Fbadges%2FUniversalProfileChecks.json
+[Google Fonts]: https://img.shields.io/endpoint?url=https%3A%2F%2Fsimpals.github.io%2Fonest%2Fbadges%2FFontFileChecks.json
+[Outline Correctness]: https://img.shields.io/endpoint?url=https%3A%2F%2Fsimpals.github.io%2Fonest%2Fbadges%2FOutlineCorrectnessChecks.json
+[Glyphset]: https://img.shields.io/endpoint?url=https%3A%2F%2Fsimpals.github.io%2Fonest%2Fbadges%2FGlyphsetChecks.json
 
 Onest
 In seven fonts, from thin to extra bold, Onest is designed as a hybrid of geometric and humanistic grotesques. Onest is suitable for reading long texts from the screens of any device and is recommended for    apps and sites. Letters are easily distinguished even in small sizes, so they can be used in interface elements or navigation. Several character sets have been developed for a range of closed and semi-closed apertures, allowing the combination of characters depending on the goal. Onest is a modern typeface, so it has a lot of useful conveniences. The subtleties of correct speech transmission are Onest's strong points. It knows like no other the importance and value of using the right diacritics and the difference between cedilla, ogonek and and the way things should be. For all its versatility, Onest allows text to keep its individuality. All thanks to alternative symbols that set the tone and even the character of the message.
@@ -37,11 +39,15 @@ Simpals is the largest classifieds board and the latest news, cool cartoons and 
 
 Fonts are built automatically by GitHub Actions - take a look in the "Actions" tab for the latest build.
 
-If you want to build fonts manually on your own computer:
+If you want to build fonts manually on your own computer, you need Python 3.10+
+and the two Rust-based QA tools ([fontspector](https://github.com/fonttools/fontspector)
+and [diffenator3](https://github.com/googlefonts/diffenator3), both installable
+with `cargo binstall fontspector diffenator3`):
 
 * `make build` will produce font files.
-* `make test` will run [FontBakery](https://github.com/googlefonts/fontbakery)'s quality assurance tests.
-* `make proof` will generate HTML proof files.
+* `make test` will run [fontspector](https://github.com/fonttools/fontspector)'s quality assurance tests.
+* `make proof` will generate HTML proof files with `diff3proof`.
+* `make update` will refresh the Python toolchain pins in `requirements.txt` from `requirements.in`.
 
 The proof files and QA tests are also available automatically via GitHub Actions - look at https://simpals.github.io/onest.
 
