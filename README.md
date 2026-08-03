@@ -53,6 +53,22 @@ The proof files and QA tests are also available automatically via GitHub Actions
 
 ## Changelog
 
+**03 Aug 2026. Version 2.000**
+
+- Character set grown from 534 to 876 glyphs; encoded codepoints from 470 to 780.
+- **Cyrillic coverage extended from 12 to 56 languages**, with no regressions:
+  - *Slavic* — Russian, Ukrainian, Belarusian, Bulgarian, Serbian, Macedonian, Bosnian, Rusyn.
+  - *Turkic* — Kazakh, Kyrgyz, Uzbek, Tatar, Bashkir, Chuvash, Azerbaijani, Turkmen, Kara-Kalpak, Sakha, Tuvinian, Kumyk, Nogai, Karachay-Balkar, Crimean Turkish, Southern Altai, Shor, Gagauz, Uyghur.
+  - *Caucasian* — Chechen, Ingush, Avaric, Dargwa, Lezghian, Lak, Tabassaran, Kabardian, Adyghe, Abaza, Tsakhur, Kaitag.
+  - *Uralic* — Udmurt, Mari, Komi, Komi-Permyak, Erzya, Moksha.
+  - *Mongolic* — Mongolian, Buriat, Kalmyk.
+  - *Iranian* — Tajik, Ossetic, Talysh, Muslim Tat.
+  - *Also* — Romanian (Cyrillic), Dungan, Central Siberian Yupik.
+- Latin coverage extended from 336 to 749 languages, including Vietnamese (combining horn) and Yoruba (combining vertical line below).
+- Vulgar fractions (⅓ ⅔ ⅕ ⅖ ⅗ ⅘ ⅙ ⅚ ⅛ ⅜ ⅝ ⅞), numerators, denominators and superiors.
+- Accented and composite glyphs rebuilt from components instead of duplicated outlines.
+- Passes the Google Fonts QA profile with no failures (fontspector: 124 pass, 16 warn, 0 fail).
+
 **03 Mar 2023. Version 1.00**
 - Upload first version.
 
